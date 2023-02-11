@@ -9,16 +9,16 @@
   </head>
   <body>
     <nav class="navigation-bar">
-      <div>apps</div>
-      <div>files</div>
-      <div>browser</div>
-      <div>terminal</div>
-      <div>contact</div>
-      <div>settings</div>
-      <div>trash</div>
+      <div><img src="assets/icons/apps.png" apps /></div>
+      <div><img src="assets/icons/files.png" files /></div>
+      <div><img src="assets/icons/apps.png" browser /></div>
+      <div><img src="assets/icons/apps.png" terminal /></div>
+      <div><img src="assets/icons/apps.png" contact /></div>
+      <div><img src="assets/icons/apps.png" settings /></div>
+      <div><img src="assets/icons/apps.png" trash /></div>
     </nav>
     <nav class="menu-bar"></nav>
-    <div id="window">
+    <div id="window" class="window">
       <div class="resizers">
         <div class="corner-resizer top-left"></div>
         <div class="corner-resizer top-right"></div>
@@ -27,16 +27,18 @@
         <div id="title-bar">
           <div class="left-side">window-title</div>
           <div class="right-side">
-            <div class="minimise">min</div>
-            <div class="maximize">max</div>
-            <div class="close">close</div>
+            <div class="minimise"><img src="assets/icons/max-empty.png" /></div>
+            <div class="maximize"><img src="assets/icons/min-empty.png" /></div>
+            <div class="close"><img src="assets/icons/close-empty.png" /></div>
           </div>
         </div>
-        <p>content inside the window</p>
-        <p>more</p>
-        <p>more</p>
-        <p>more</p>
-        <p>more</p>
+        <div class="body">
+          <p>content inside the window</p>
+          <p>more</p>
+          <p>more</p>
+          <p>more</p>
+          <p>more</p>
+        </div>
       </div>
     </div>
     <script src="js/window.js"></script>

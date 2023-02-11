@@ -6,8 +6,18 @@
 .navigation-bar {
   position: fixed;
   left: 50%;
-  bottom: 0;
+  bottom: 4px;
   transform: translate(-50%, 0);
   display: flex;
-  height: 10%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 4px;
+  border-radius: 20px;
+  height: 69px;
+  background-color: rgba(47, 47, 47, 0.47);
+}
+.navigation-bar img {
+  height: 54px;
+  width: 54px;
+  margin: 4px;
 }

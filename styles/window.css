@@ -19,6 +19,19 @@
 }
 #title-bar .right-side {
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#title-bar .right-side img {
+  height: 12px;
+  width: 12px;
+  margin: 2px;
+}
+#window .body {
+  background-color: #f1f1f1;
+  overflow-y: hidden;
+  height: calc(100% - 18px);
+  border-radius: 0 0 8px 8px;
 }
 
 /* for the blur */
