@@ -3,10 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
-.navbar {
+.navigation-bar {
   position: fixed;
   left: 50%;
   bottom: 0;
   transform: translate(-50%, 0);
   display: flex;
+  height: 10%;
 }

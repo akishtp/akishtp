@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akish T P</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/window.css" />
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navigation-bar">
       <div>apps</div>
       <div>files</div>
       <div>browser</div>
@@ -16,5 +17,28 @@
       <div>settings</div>
       <div>trash</div>
     </nav>
+    <nav class="menu-bar"></nav>
+    <div id="window">
+      <div class="resizers">
+        <div class="corner-resizer top-left"></div>
+        <div class="corner-resizer top-right"></div>
+        <div class="corner-resizer bottom-left"></div>
+        <div class="corner-resizer bottom-right"></div>
+        <div id="title-bar">
+          <div class="left-side">window-title</div>
+          <div class="right-side">
+            <div class="minimise">min</div>
+            <div class="maximize">max</div>
+            <div class="close">close</div>
+          </div>
+        </div>
+        <p>content inside the window</p>
+        <p>more</p>
+        <p>more</p>
+        <p>more</p>
+        <p>more</p>
+      </div>
+    </div>
+    <script src="js/window.js"></script>
   </body>
 </html>
