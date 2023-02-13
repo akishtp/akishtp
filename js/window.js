@@ -134,15 +134,13 @@ makeResizableDiv(".window");
 // for closing window
 
 function CloseWindow(param) {
-  param.parentNode.parentNode.parentNode.remove();
+  param.parentNode.parentNode.parentNode.parentNode.remove();
 }
 
-// const removeButtons = document.getElementsByClassName("window-close");
-
-// Array.from(removeButtons).forEach((removeButton) => {
-//   removeButton.addEventListener("click", () => {
-//     removeButton.parentNode.parentNode.parentNode.remove();
-//   });
-// });
-
 // for maximizing window
+
+function MaximizeWindow(param) {
+  param.parentElement.parentElement.parentElement.parentElement.classList.toggle(
+    "maximized-window"
+  );
+}
