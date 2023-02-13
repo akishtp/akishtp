@@ -49,7 +49,7 @@ function dragElement(elmnt) {
 function makeResizableDiv(div) {
   const element = document.querySelector(div);
   const resizers = document.querySelectorAll(div + " .corner-resizer");
-  const minimum_size = 20;
+  const minimum_size = 28;
   const minimum_width = 180;
   let original_width = 0;
   let original_height = 0;
@@ -130,3 +130,14 @@ function makeResizableDiv(div) {
 }
 
 makeResizableDiv(".window");
+
+// for closing window
+const removeButtons = document.getElementsByClassName("window-close");
+
+Array.from(removeButtons).forEach((removeButton) => {
+  removeButton.addEventListener("click", () => {
+    removeButton.parentNode.parentNode.parentNode.remove();
+  });
+});
+
+// for maximizing window
