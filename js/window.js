@@ -1,5 +1,7 @@
 // to drag window
 dragElement(document.getElementById("window"));
+var original_height;
+var original_width;
 
 function dragElement(elmnt) {
   var pos1 = 0,
@@ -49,7 +51,7 @@ function dragElement(elmnt) {
 function makeResizableDiv(div) {
   const element = document.querySelector(div);
   const resizers = document.querySelectorAll(div + " .corner-resizer");
-  const minimum_size = 28;
+  const minimum_size = 78;
   const minimum_width = 180;
   let original_width = 0;
   let original_height = 0;
@@ -140,7 +142,23 @@ function CloseWindow(param) {
 // for maximizing window
 
 function MaximizeWindow(param) {
-  param.parentElement.parentElement.parentElement.parentElement.classList.toggle(
-    "maximized-window"
-  );
+  // param.parentElement.parentElement.parentElement.parentElement.classList.toggle(
+  //   "maximized-window"
+  // );
+  const window = param.parentElement.parentElement.parentElement.parentElement;
+  console.log();
+  if (
+    window.style.width === "100vw" &&
+    window.style.height === "calc(-74px + 100vh)"
+  ) {
+    window.style.width = original_width;
+    window.style.height = original_height;
+  } else {
+    original_height = window.style.height;
+    original_width = window.style.width;
+    window.style.width = "100vw";
+    window.style.height = "calc(100vh - 74px)";
+    window.style.top = 0;
+    window.style.left = 0;
+  }
 }

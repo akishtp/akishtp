@@ -1,13 +1,12 @@
 #window {
   position: absolute;
   z-index: 9;
-  /* background-color: #f1f1f1; */
   border: 1px solid #d3d3d3;
   border-radius: 8px;
   border: 1px solid #1f1f1f;
   top: 0;
   left: 0;
-  transition: width 2s;
+  /* transition: 2s; */
 }
 #title-bar {
   height: 24px;
@@ -53,7 +52,7 @@
   border-radius: 0 0 8px 8px;
 }
 
-.maximized-window {
+.maximized-window#window {
   height: calc(100vh - 73px);
   width: 100vw;
   transition: width 2s;

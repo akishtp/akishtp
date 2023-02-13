@@ -7,6 +7,7 @@ body {
   overflow: hidden;
 }
 .navigation-bar {
+  z-index: 100;
   position: fixed;
   left: 50%;
   bottom: 4px;
