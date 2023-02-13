@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  overflow: hidden;
+}
 .navigation-bar {
   position: fixed;
   left: 50%;
@@ -14,7 +17,7 @@
   padding: 0 4px;
   border-radius: 20px;
   height: 69px;
-  background-color: rgba(47, 47, 47, 0.47);
+  background-color: rgba(114, 114, 114, 0.47);
 }
 .navigation-bar img {
   height: 54px;
