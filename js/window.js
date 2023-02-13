@@ -132,12 +132,17 @@ function makeResizableDiv(div) {
 makeResizableDiv(".window");
 
 // for closing window
-const removeButtons = document.getElementsByClassName("window-close");
 
-Array.from(removeButtons).forEach((removeButton) => {
-  removeButton.addEventListener("click", () => {
-    removeButton.parentNode.parentNode.parentNode.remove();
-  });
-});
+function CloseWindow(param) {
+  param.parentNode.parentNode.parentNode.remove();
+}
+
+// const removeButtons = document.getElementsByClassName("window-close");
+
+// Array.from(removeButtons).forEach((removeButton) => {
+//   removeButton.addEventListener("click", () => {
+//     removeButton.parentNode.parentNode.parentNode.remove();
+//   });
+// });
 
 // for maximizing window
