@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -5,45 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akish T P</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/window.css" />
   </head>
   <body>
-    <nav class="navigation-bar">
-      <div><img src="assets/icons/apps.png" apps /></div>
-      <div><img src="assets/icons/files.png" files /></div>
-      <div><img src="assets/icons/internet.png" browser /></div>
-      <div><img src="assets/icons/contact.png" contact /></div>
-      <div><img src="assets/icons/apps.png" settings /></div>
-      <div><img src="assets/icons/files.png" trash /></div>
-    </nav>
-    <nav class="menu-bar"></nav>
-    <div id="window" class="window">
-      <div class="resizers">
-        <div class="corner-resizer top-left"></div>
-        <div class="corner-resizer top-right"></div>
-        <div class="corner-resizer bottom-left"></div>
-        <div class="corner-resizer bottom-right"></div>
-        <div id="title-bar">
-          <div class="left-side">window-title</div>
-          <div class="right-side">
-            <div class="maximize" onclick="MaximizeWindow(this)"></div>
-            <div class="window-close" onclick="CloseWindow(this)"></div>
-          </div>
-        </div>
-        <div class="body">
-          <p>content inside the window</p>
-          <p>content inside the window</p>
-          <p>content inside the window</p>
-          <p>content inside the window</p>
-          <p>content inside the window</p>
-          <p>content inside the window</p>
-          <p>more</p>
-          <p>more</p>
-          <p>more</p>
-          <p>more</p>
-        </div>
+    <nav class="navbar">
+      <div class="nav-item name-wrapper">
+        <a href="/" class="name"><img src="./Assets/name-light.png" /></a>
       </div>
-    </div>
-    <script src="js/window.js"></script>
+      <div class="nav-item contact-wrapper">
+        <a href="/contact" class="contact"
+          ><img src="./Assets/contact-light.png"
+        /></a>
+      </div>
+      <div class="nav-item gallery-wrapper">
+        <a href="/gallery" class="gallery"
+          ><img src="./Assets/gallery-light.png"
+        /></a>
+      </div>
+      <div class="nav-item projects-wrapper">
+        <a href="/projects" class="projects"
+          ><img src="./Assets/projects-light.png"
+        /></a>
+      </div>
+      <div class="nav-item youtube-wrapper">
+        <a href="/youtube" class="youtube"
+          ><img src="./Assets/youtube-light.png"
+        /></a>
+      </div>
+    </nav>
   </body>
 </html>
