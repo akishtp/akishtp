@@ -22,6 +22,21 @@ body {
   align-items: center;
   justify-content: flex-end;
 }
+.nav-item span {
+  animation: marquee-reset;
+  animation-play-state: paused;
+}
+.nav-item span:not(:first-child) {
+  display: none;
+}
+.nav-item:hover:not(:first-child) {
+  justify-content: center;
+}
+.nav-item:hover > span {
+  animation: marquee 6s linear infinite;
+  animation-play-state: running;
+  display: block;
+}
 .nav-item.home {
   justify-content: flex-start;
   background-color: #000;
@@ -58,4 +73,24 @@ body {
 }
 .me .signature {
   margin-top: 8vh;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0%, 0);
+  }
+  50% {
+    transform: translate(-100%, 0);
+  }
+  50.001% {
+    transform: translate(100%, 0);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
+}
+@keyframes marquee-reset {
+  0% {
+    transform: translate(0%, 0);
+  }
 }
