@@ -37,22 +37,41 @@ body {
   animation-play-state: running;
   display: block;
 }
+.nav-item:hover {
+  color: #fff;
+}
 .nav-item.home {
   justify-content: flex-start;
   background-color: #000;
   color: #fff;
 }
+.nav-item.home:hover {
+  background-color: #fff;
+  color: #000;
+}
 .nav-item.youtube {
   background-color: #ff6f6f;
+}
+.nav-item.youtube:hover {
+  background-color: #ff0000;
 }
 .nav-item.projects {
   background-color: #c86fff;
 }
+.nav-item.projects:hover {
+  background-color: #9d00ff;
+}
 .nav-item.gallery {
   background-color: #fffa6f;
 }
+.nav-item.gallery:hover {
+  background-color: #ffd51b;
+}
 .nav-item.contact {
   background-color: #70a0ff;
+}
+.nav-item.contact:hover {
+  background-color: #2481de;
 }
 
 .footer {
