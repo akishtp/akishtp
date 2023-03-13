@@ -145,7 +145,3 @@ body {
     font-size: 4vw;
   }
 }
-
-.nav-item:not() {
-  display: none;
-}

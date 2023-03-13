@@ -1,19 +1,14 @@
-// document.addEventListener("click", function (event) {
-//   if (event.target.classList.contains("nav-item")) {
-//     event.target.style.height = "100vh";
-//   }
-// });
-
-// const divElement = document.querySelector(".moving-text");
-// divElement.addEventListener("click", function () {
-//   // Get the parent div element
-//   const parentDiv = this.parentElement;
-//   // Change the style of the parent div element
-//   parentDiv.style.backgroundColor = "red";
-// });
-
 document.addEventListener("click", function (event) {
-  const parentDiv = event.target.parentElement;
-  console.log(parentDiv);
-  parentDiv.style.height = "100vh";
+  if (event.target.classList.contains("moving-text")) {
+    const parentDiv = event.target.parentElement;
+    const y = parentDiv.offsetTop;
+    console.log(y);
+    parentDiv.style.cssText =
+      "width:100vw; position: absolute; top: 0; left: 0; height: 100vh; transition: background-color 2s ease-in; background-color: #dde7f3; transition: all 5s ease-in;";
+    parentDiv.style.transform = "translateY(-${y}px)";
+    const childElements = parentDiv.querySelectorAll("*");
+    childElements.forEach(function (childElement) {
+      childElement.style.display = "none";
+    });
+  }
 });
