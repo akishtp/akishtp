@@ -4,8 +4,8 @@ document.addEventListener("click", function (event) {
     const y = parentDiv.offsetTop;
     console.log(y);
     parentDiv.style.cssText =
-      "width:100vw; position: absolute; top: 0; left: 0; height: 100vh; transition: background-color 2s ease-in; background-color: #dde7f3; transition: all 5s ease-in;";
-    parentDiv.style.transform = "translateY(-${y}px)";
+      "width:100vw; position: absolute; border-top: 0.4vw solid #000; height: 100vh; transition: background-color 10s ease-in; background-color: #dde7f3; transition: height 1.6s ease-in-out, background-color 2s ease-in-out, transform 1.6s ease-in-out;";
+    parentDiv.style.transform = `translateY(-${y}px)`;
     const childElements = parentDiv.querySelectorAll("*");
     childElements.forEach(function (childElement) {
       childElement.style.display = "none";
