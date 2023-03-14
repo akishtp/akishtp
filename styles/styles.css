@@ -23,6 +23,7 @@ body {
   align-items: center;
   justify-content: flex-end;
   max-lines: 1;
+  position: absolute;
 }
 .nav-item .moving-text {
   animation: marquee-reset;
@@ -47,6 +48,7 @@ body {
   justify-content: flex-start;
   background-color: #000;
   color: #fff;
+  top: 0;
 }
 .nav-item.home:hover {
   background-color: #fff;
@@ -54,24 +56,28 @@ body {
 }
 .nav-item.youtube {
   background-color: #ff6f6f;
+  top: 40vw;
 }
 .nav-item.youtube:hover {
   background-color: #ff0000;
 }
 .nav-item.projects {
   background-color: #c86fff;
+  top: 30vw;
 }
 .nav-item.projects:hover {
   background-color: #9d00ff;
 }
 .nav-item.gallery {
   background-color: #fffa6f;
+  top: 20vw;
 }
 .nav-item.gallery:hover {
   background-color: #ffd51b;
 }
 .nav-item.contact {
   background-color: #70a0ff;
+  top: 10vw;
 }
 .nav-item.contact:hover {
   background-color: #2481de;
@@ -82,19 +88,22 @@ body {
   align-items: flex-end;
   justify-content: space-between;
   border-bottom: 0.4vw solid #000;
+  position: absolute;
+  width: 100vw;
+  top: 50vw;
+  height: 16vw;
 }
 .me {
   width: 69%;
+  height: 100%;
   font-size: 3vw;
   line-height: 2.6vw;
   border-right: 0.4vw solid #000;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
   padding: 1vw 2vw;
-}
-.me .signature {
-  margin-top: 6vw;
 }
 .footer .socials {
   width: 31%;
