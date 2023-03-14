@@ -9,6 +9,10 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   min-height: 100vh;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .nav-items {
   border-top: 0.4vw solid #000;
 }
@@ -135,10 +139,25 @@ body {
     height: 18vw;
     font-size: 20vw;
   }
+  .nav-item.contact {
+    top: 18vw;
+  }
+  .nav-item.gallery {
+    top: 36vw;
+  }
+  .nav-item.projects {
+    top: 54vw;
+  }
+  .nav-item.nav-item.youtube {
+    top: 72vw;
+  }
   .footer {
     flex-direction: column-reverse;
+    top: 90vw;
+    height: 30vw;
   }
   .footer .me {
+    height: 100%;
     border-right: none;
     width: 100%;
     padding: 2vw;
