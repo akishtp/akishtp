@@ -5,7 +5,7 @@ document.addEventListener("click", function (event) {
     const targetUrl = parentDiv.href;
     const y = parentDiv.offsetTop;
     parentDiv.style.cssText =
-      "width:100vw; border-top: 0.4vw solid #000; height: 66vw; transition: background-color 10s ease-in; background-color: #dde7f3; transition: height 1s ease-in-out, background-color 1.6s ease-in-out, transform 1.6s ease-in-out; z-index: 99;";
+      "width:100vw; border-top: 0.4vw solid #000; height: 66vw; transition: background-color 10s ease-in; background-color: #dde7f3; transition: height 0.6s ease-in-out, background-color 1s ease-in-out, transform 0.6s ease-in-out; z-index: 99;";
     parentDiv.style.transform = `translateY(-${y}px)`;
     const childElements = parentDiv.querySelectorAll("*");
     childElements.forEach(function (childElement) {
@@ -13,6 +13,6 @@ document.addEventListener("click", function (event) {
     });
     setTimeout(() => {
       window.location.href = targetUrl; // transition to the new page
-    }, 2000);
+    }, 1100);
   }
 });
