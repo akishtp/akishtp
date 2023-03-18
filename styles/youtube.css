@@ -15,6 +15,50 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.youtube-navbar {
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+  animation-name: fadeInTop;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.4vw solid #000;
+  height: 64px;
+  background-color: #ff0000;
+}
+.youtube-navbar button {
+  height: 42px;
+  width: 42px;
+  background-color: #dde7f3;
+  border: 2px solid #000;
+}
+.youtube-navbar .left-side button {
+  border-radius: 50%;
+}
+.youtube-navbar input {
+  height: 42px;
+  border: 2px solid #000;
+  border-right: none;
+  padding: 0 12px;
+  width: 69%;
+}
+.youtube-navbar .middle-side img {
+  height: 42px;
+}
+.youtube-navbar .left-side,
+.youtube-navbar .middle-side,
+.youtube-navbar .right-side {
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+}
+.youtube-navbar .middle-side {
+  justify-content: center;
+}
+.youtube-navbar .right-side {
+  justify-content: flex-end;
+}
 .banner {
   animation-duration: 0.6s;
   animation-fill-mode: both;
@@ -68,10 +112,8 @@ a {
 @keyframes fadeInTop {
   from {
     transform: translateY(-100%);
-    opacity: 0;
   }
   to {
     transform: translateY(0);
-    opacity: 1;
   }
 }

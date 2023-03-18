@@ -5,10 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akish tp - Youtube</title>
+    <link
+      rel="icon"
+      href="../assets/favicon/youtube.png"
+      type="image/icon type"
+    />
     <link rel="stylesheet" href="../styles/youtube.css" />
   </head>
   <body>
-    <nav class="youtube-navbar"></nav>
+    <nav class="youtube-navbar">
+      <div class="left-side"><button class="hamburgusa">🍔</button></div>
+      <div class="middle-side"><img src="../assets/youtubeII.png" /></div>
+      <div class="right-side">
+        <input
+          type="text"
+          class="search"
+          placeholder="Seach my videos.."
+        /><button class="search-button">👀</button>
+      </div>
+    </nav>
     <img
       src="../assets/banner.png"
       alt="youtube-banner: be nice."
@@ -25,11 +40,14 @@
           </div>
         </div>
         <div class="right-side">
-          <button class="subscribe">Subscribe</button>
+          <a
+            href="https://www.youtube.com/@akishtp/featured?sub_confirmation=1"
+          >
+            <button class="subscribe">Subscribe</button>
+          </a>
         </div>
       </div>
     </section>
-
     <section class="videos-section"></section>
 
     <script src="../js/yt.js"></script>
