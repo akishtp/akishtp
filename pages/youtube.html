@@ -8,18 +8,29 @@
     <link rel="stylesheet" href="../styles/youtube.css" />
   </head>
   <body>
+    <nav class="youtube-navbar"></nav>
     <img
       src="../assets/banner.png"
       alt="youtube-banner: be nice."
       class="banner"
     />
-    <div class="channel-info">
+    <section class="channel-info">
       <div class="channel-thumbnail"></div>
       <div class="channel-details">
-        <div class="channel-name">Akish tp</div>
-        <div class="subscribers">Subscribers:</div>
+        <div class="left-side">
+          <div class="channel-image"></div>
+          <div class="channel-text-details">
+            <div class="channel-name">Akish tp</div>
+            <div class="subscribers">Subscribers:15</div>
+          </div>
+        </div>
+        <div class="right-side">
+          <button class="subscribe">Subscribe</button>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <section class="videos-section"></section>
 
     <script src="../js/yt.js"></script>
   </body>
