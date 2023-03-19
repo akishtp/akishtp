@@ -47,5 +47,7 @@ fetch(url4)
   .then((data) => {
     const vidDetails = data.items;
     const noOfVids = vidDetails.length;
-    for (i = 1; i < noOfVids; i++) {}
+    for (i = 1; i < noOfVids; i++) {
+      console.log(vidDetails[i]);
+    }
   });
