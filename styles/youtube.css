@@ -121,7 +121,7 @@ a {
 }
 .video-title {
   font-size: 1.6vw;
-  padding: 4px 0;
+  padding: 6px 0;
 }
 .left-animation {
   animation-duration: 0.6s;
@@ -163,10 +163,10 @@ a {
     display: none;
   }
   .banner {
-    height: 36vh;
+    height: 28vh;
   }
   .channel-details {
-    height: 28vh;
+    height: 24vh;
     padding: 0;
     font-size: 4vw;
   }
@@ -186,5 +186,8 @@ a {
   .video-card {
     width: 100%;
     margin: 1vh;
+  }
+  .video-title {
+    font-size: 2.6vh;
   }
 }
