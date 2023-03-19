@@ -8,6 +8,7 @@ const url4 = `https://www.googleapis.com/youtube/v3/search?channelId=${channelId
 const channelThumbnailEl = document.querySelector(".channel-thumbnail");
 const subscribersEl = document.querySelector(".subscribers");
 
+// fetch sub count
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
