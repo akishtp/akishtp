@@ -7,6 +7,7 @@ const url4 = `https://www.googleapis.com/youtube/v3/search?channelId=${channelId
 
 const channelThumbnailEl = document.querySelector(".channel-thumbnail");
 const subscribersEl = document.querySelector(".subscribers");
+var videosSection = document.getElementById("videos-section");
 
 // fetch sub count
 fetch(url)
@@ -48,6 +49,18 @@ fetch(url4)
     const vidDetails = data.items;
     const noOfVids = vidDetails.length;
     for (i = 1; i < noOfVids; i++) {
-      console.log(vidDetails[i]);
+      const videoId = vidDetails[i].id.videoId;
+      const vidTitle = vidDetails[i].snippet.title;
+      const publishedAt = vidDetails[i].snippet.publishedAt;
+      const thumbnailUrl = vidDetails[i].snippet.thumbnails.medium.url;
+
+      var videoHtml =
+        `<a href={https://www.youtube.com/watch?v=${videoId}} class="video-card">` +
+        `<img src=${thumbnailUrl} alt="video-thumbnail" />` +
+        `<div class="vid-title">${vidTitle}</video>` +
+        `<div class="vid-date">${publishedAt}</div>` +
+        "</a>";
+
+      videosSection.innerHTML += videoHtml;
     }
   });
