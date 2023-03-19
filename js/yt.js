@@ -53,14 +53,29 @@ fetch(url4)
       const vidTitle = vidDetails[i].snippet.title;
       const publishedAt = vidDetails[i].snippet.publishedAt;
       const thumbnailUrl = vidDetails[i].snippet.thumbnails.medium.url;
+      let animationClass = "";
+      if (i % 2 == 0) {
+        animationClass = "right-animation";
+      } else {
+        animationClass = "left-animation";
+      }
 
       var videoHtml =
-        `<a href={https://www.youtube.com/watch?v=${videoId}} class="video-card">` +
+        `<a href="https://www.youtube.com/watch?v=${videoId}" class="video-card ${animationClass}">` +
         `<img src=${thumbnailUrl} alt="video-thumbnail" />` +
-        `<div class="vid-title">${vidTitle}</video>` +
-        `<div class="vid-date">${publishedAt}</div>` +
-        "</a>";
+        `<div class="video-title">${vidTitle}</div>` +
+        `<div class="vid-date">${formatDate(publishedAt)}</div>` +
+        `</a>`;
 
       videosSection.innerHTML += videoHtml;
     }
   });
+
+function formatDate(dateString) {
+  var date = new Date(dateString);
+  return date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
