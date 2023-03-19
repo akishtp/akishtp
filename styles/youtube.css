@@ -91,6 +91,7 @@ a {
 .channel-details .left-side img {
   border: 4px solid #000;
   margin: 0 20px;
+  height: 10vw;
 }
 .channel-text-details {
   display: flex;
@@ -101,8 +102,7 @@ a {
   background-color: #ff0000;
   color: #fff;
   border: 0.4vw solid #000;
-  padding: 0px 2vw;
-  height: 4vw;
+  padding: 0.6vw 2vw;
   font-size: 2vw;
   font-weight: 500;
 }
@@ -112,5 +112,27 @@ a {
   }
   to {
     transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 669px) {
+  .youtube-navbar .right-side input {
+    display: none;
+  }
+  .banner {
+    height: 48vw;
+  }
+  .channel-details {
+    height: 36vw;
+    padding: 0;
+    font-size: 4vw;
+  }
+  .channel-details .left-side img {
+    margin: 0;
+    height: 22vw;
+  }
+  .subscribe {
+    font-size: 3vw;
+    padding: 1vw 2vw;
   }
 }
