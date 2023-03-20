@@ -63,6 +63,7 @@ a {
   flex-direction: column;
   width: 64px;
   background-color: #dde7f3;
+  z-index: 100;
 }
 .side-nav-item {
   height: 64px;
@@ -201,6 +202,7 @@ a {
   .videos-section {
     flex-direction: column;
     padding: 1vh 2vw;
+    padding-bottom: calc(100vw / 8 + 2vw);
   }
   .video-card {
     width: 100%;

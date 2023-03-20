@@ -61,7 +61,7 @@ fetch(url4)
       }
 
       var videoHtml =
-        `<a href="https://www.youtube.com/watch?v=${videoId}" class="video-card ${animationClass}">` +
+        `<a href="https://www.youtube.com/watch?v=${videoId}" class="video-card ${animationClass}" target="_blank" title="Click to watch video">` +
         `<img src=${thumbnailUrl} alt="video-thumbnail" />` +
         `<div class="video-title">${vidTitle}</div>` +
         `<div class="vid-date">${formatDate(publishedAt)}</div>` +
