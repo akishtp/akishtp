@@ -18,7 +18,7 @@ fetch(url)
   })
   .catch((error) => {
     console.error(error);
-    subscribersEl.innerHTML = "Subscribers: Can't fetch. Check channel.";
+    subscribersEl.innerHTML = "Subscribers: Can't fetch. Check channel 👉";
   });
 
 // fetch channel banner
