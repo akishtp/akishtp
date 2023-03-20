@@ -14,7 +14,8 @@
   </head>
   <body>
     <nav class="youtube-navbar">
-      <div class="left-side"><button class="hamburgusa">🍔</button></div>
+      <!-- if you ever decide to make the sidenav work 😮‍💨 -->
+      <!-- <div class="left-side"><button class="hamburgusa">🍔</button></div> -->
       <div class="middle-side"><img src="../assets/youtubeII.png" /></div>
       <div class="right-side">
         <input
@@ -24,28 +25,37 @@
         /><button class="search-button">👀</button>
       </div>
     </nav>
-    <div class="banner"></div>
-    <section class="channel-info">
-      <div class="channel-thumbnail"></div>
-      <div class="channel-details">
-        <div class="left-side">
-          <div class="channel-image"></div>
-          <div class="channel-text-details">
-            <div class="channel-name">Akish tp</div>
-            <div class="subscribers">Fetching Subs...</div>
-          </div>
-        </div>
-        <div class="right-side">
-          <a
-            href="https://www.youtube.com/@akishtp/featured?sub_confirmation=1"
-          >
-            <button class="subscribe">Subscribe</button>
-          </a>
-        </div>
+    <div class="inner-body">
+      <div class="side-nav">
+        <a href="/" class="side-nav-item">🏠</a
+        ><a href="/" class="side-nav-item">☎️</a
+        ><a href="/" class="side-nav-item">🌄</a
+        ><a href="/" class="side-nav-item">📂</a>
       </div>
-    </section>
-    <section class="videos-section" id="videos-section"></section>
-
+      <div class="big-right-side">
+        <div class="banner"></div>
+        <section class="channel-info">
+          <div class="channel-thumbnail"></div>
+          <div class="channel-details">
+            <div class="left-side">
+              <div class="channel-image"></div>
+              <div class="channel-text-details">
+                <div class="channel-name">Akish tp</div>
+                <div class="subscribers">Fetching Subs...</div>
+              </div>
+            </div>
+            <div class="right-side">
+              <a
+                href="https://www.youtube.com/@akishtp/featured?sub_confirmation=1"
+              >
+                <button class="subscribe">Subscribe</button>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="videos-section" id="videos-section"></section>
+      </div>
+    </div>
     <script src="../js/yt.js"></script>
   </body>
 </html>
