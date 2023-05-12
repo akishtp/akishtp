@@ -17,6 +17,7 @@ a {
 .page-title {
   font-size: 10vw;
   font-weight: 700;
+  /* background-color: #c86fff; */
 }
 .projects {
   display: flex;
@@ -31,6 +32,7 @@ a {
   border: 0.4vw solid #000;
   width: 70vw;
   margin: 6vw;
+  overflow: hidden;
 }
 .project .left-side {
   padding: 6vw 0;
@@ -38,19 +40,43 @@ a {
 }
 .project .right-side {
   width: 20%;
+  position: relative;
+}
+.right-side img {
+  height: 70%;
+  position: absolute;
+}
+.logo {
+  height: 36px;
+  width: 36px;
+  /* border-radius: 12px; */
+  margin: 0 10px 0 0;
 }
 .title {
   font-size: 2rem;
   font-weight: 600;
+  display: flex;
+  align-items: center;
 }
 .next-line {
   display: flex;
   align-items: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.one-liner {
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 .next-line .full-stop {
   padding: 0 1vw;
 }
-
+.project button {
+  border-radius: 0;
+  border: 1px solid #000;
+  background-color: transparent;
+}
 .footer {
   display: flex;
   align-items: flex-end;
@@ -92,6 +118,7 @@ a {
     width: 100%;
     padding: 2vw;
     font-size: 4vw;
+    line-height: 2.8vw;
   }
   .footer .socials {
     border-bottom: 0.4vw solid #000;
