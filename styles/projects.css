@@ -13,63 +13,49 @@ body {
   flex-direction: column;
 }
 .heading {
-  font-size: 8vw;
+  font-size: 10vw;
   font-weight: 700;
 }
 .projects {
-  width: 70vw;
+  width: 80vw;
+}
+.logo {
+  height: 12vw;
 }
 .project {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 1.6vw;
   margin: 6vw 0;
-}
-.full-stop {
-  margin: 0 20px;
 }
 .left-side {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-.logo {
-  height: 128px;
 }
 .middle-side {
-  width: calc(100% - 409px);
-  margin: 0 36px;
+  width: 60%;
 }
-.first-line {
-  display: flex;
-  justify-content: space-between;
-}
-.title {
-  font-size: 3vw;
-  font-weight: 700;
-}
-.year {
-  font-size: 1.2vw;
-  font-weight: 600;
-}
-.role {
-  font-size: 1.2vw;
-  font-weight: 600;
-  margin: 16px 0;
-}
-.right-side {
-  width: 169px;
+.second-line {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 1.8vw;
+  margin: 12px 0;
+}
+.title {
+  font-weight: 700;
+  font-size: 2.4vw;
+}
+.full-stop {
+  margin: 0 20px 0 0;
 }
 .read-more {
-  padding: 0.6vw 1vw;
-  border-radius: 0;
+  padding: 0.8vw 1.4vw;
   border: 0.2vw solid #000;
-  width: 169px;
+  font-size: 1.6vw;
 }
-
 .footer {
   display: flex;
   align-items: flex-end;
