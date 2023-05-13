@@ -95,3 +95,30 @@ body {
 .footer .socials {
   width: 31%;
 }
+
+@media only screen and (max-width: 669px) {
+  .projects {
+    width: 100vw;
+  }
+  .footer {
+    flex-direction: column-reverse;
+    top: 90vw;
+    height: 30vw;
+  }
+  .footer .me {
+    height: 100%;
+    border-right: none;
+    width: 100%;
+    padding: 2vw;
+    font-size: 4vw;
+  }
+  .footer .socials {
+    border-bottom: 0.4vw solid #000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vw;
+    font-size: 4vw;
+  }
+}
