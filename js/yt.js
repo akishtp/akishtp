@@ -5,6 +5,8 @@ const url2 = `https://www.googleapis.com/youtube/v3/channels?part=brandingSettin
 const url3 = `https://www.googleapis.com/youtube/v3/channels?part=snippet&fields=items%2Fsnippet%2Fthumbnails%2Fdefault&id=${channelId}&key=${apiKey}`;
 const url4 = `https://www.googleapis.com/youtube/v3/search?channelId=${channelId}&part=snippet,id&key=${apiKey}`;
 
+console.log(url4);
+
 const channelThumbnailEl = document.querySelector(".channel-thumbnail");
 const subscribersEl = document.querySelector(".subscribers");
 var videosSection = document.getElementById("videos-section");

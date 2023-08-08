@@ -19,6 +19,7 @@ body {
   background-color: #ff0000;
   padding: 0 0.4vw;
   width: 100vw;
+  z-index: 1;
 }
 .navbar img {
   height: 42px;
@@ -47,6 +48,8 @@ body {
   padding: 64px 0 0 0;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  z-index: 0;
 }
 .sidenav {
   height: 64px;
@@ -55,4 +58,25 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1.6rem;
+}
+.body {
+  padding: 64px 0 0 64px;
+}
+.body .banner {
+  width: calc(100vw - 64px);
+  height: 20vw;
+  border-bottom: 0.4vw solid #000;
+}
+.body .banner img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.body .info {
+  height: 16vw;
+  border-bottom: 0.4vw solid #000;
+}
+.body .info img {
+  border: 0.2vw solid #000;
+  height: 10vw;
 }
