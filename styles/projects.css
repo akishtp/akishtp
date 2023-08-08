@@ -15,6 +15,9 @@ body {
 .heading {
   font-size: 12vw;
   font-weight: 700;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-name: fadeInTop;
 }
 .projects {
   width: 80vw;
@@ -26,8 +29,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.8vw;
   margin: 6vw 0;
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+  animation-name: fadeInTop;
 }
 .left-side {
   display: flex;
@@ -56,6 +61,9 @@ body {
   border: 0.2vw solid #000;
   font-size: 1.6vw;
 }
+.one-liner {
+  font-size: 1.8vw;
+}
 .footer {
   display: flex;
   align-items: flex-end;
@@ -80,6 +88,17 @@ body {
 }
 .footer .socials {
   width: 31%;
+}
+
+@keyframes fadeInTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 100;
+  }
 }
 
 @media only screen and (max-width: 669px) {
