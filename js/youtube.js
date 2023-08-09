@@ -74,11 +74,12 @@ async function fetchVideos() {
           const published_at = video_details.snippet.publishedAt;
           const thumbnail_url = video_details.snippet.thumbnails.medium.url;
           var video_card =
-            `<a href="https://www.youtube.com/watch?v=${video_id}" class="video-card" target="_blank" title="Click to watch video">` +
+            `<div class="video-card-wrapper"><a href="https://www.youtube.com/watch?v=${video_id}" class="video-card" target="_blank" title="Click to watch video">` +
             `<img src=${thumbnail_url} alt="video-thumbnail" />` +
             `<div class="video-title">${video_title}</div>` +
-            `<div class="vid-date">${formatDate(published_at)}</div>` +
-            `</a>`;
+            `<div class="video-date">${formatDate(
+              published_at
+            )}</div></a></div>`;
           videosClass.innerHTML += video_card;
         }
       });

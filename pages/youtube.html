@@ -2,75 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Akish tp - Youtube</title>
     <link
       rel="icon"
       href="../assets/favicon/youtube.png"
       type="image/icon type"
     />
     <link rel="stylesheet" href="../styles/youtube.css" />
+    <title>Akish tp - Youtube</title>
   </head>
   <body>
-    <nav class="youtube-navbar">
-      <!-- if you ever decide to make the sidenav work 😮‍💨 -->
-      <!-- <div class="left-side"><button class="hamburgusa">🍔</button></div> -->
-      <div class="middle-side"><img src="../assets/youtubeII.png" /></div>
+    <nav class="navbar">
+      <a href="./youtube.html">
+        <img src="../assets/youtubeII.png" alt="YOUTUBE" />
+      </a>
       <div class="right-side">
-        <input
-          type="text"
-          class="search"
-          placeholder="Seach my videos.."
-        /><button class="search-button">👀</button>
+        <input type="text" placeholder="search my videos" />
+        <button>👀</button>
       </div>
     </nav>
-    <div class="inner-body">
-      <div class="side-nav">
-        <a href="../" class="side-nav-item">🏠</a
-        ><a href="../" class="side-nav-item">☎️</a
-        ><a href="../" class="side-nav-item">🌄</a
-        ><a href="../" class="side-nav-item">📂</a>
-      </div>
-      <div class="big-right-side">
-        <div class="banner"></div>
-        <section class="channel-info">
-          <div class="channel-thumbnail"></div>
-          <div class="channel-details">
-            <div class="left-side">
-              <div class="channel-image"></div>
-              <div class="channel-text-details">
-                <div class="channel-name">Akish tp</div>
-                <div class="subscribers">Fetching Subs...</div>
-              </div>
-            </div>
-            <div class="right-side">
-              <a
-                href="https://www.youtube.com/@akishtp/featured?sub_confirmation=1"
-              >
-                <button class="subscribe">Subscribe</button>
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="videos-section" id="videos-section"></section>
-      </div>
+    <div class="sidebar">
+      <div class="sidenav">🏠</div>
+      <div class="sidenav">☎️</div>
+      <div class="sidenav">🌁</div>
+      <div class="sidenav">📁</div>
     </div>
-    <footer class="footer" id="footer">
-      <div class="me">
-        <!-- <div class="funny-oneliner">This website was made by Akish TP.</div>
-        <div class="signature">source: trust me bro.</div> -->
-        <div class="funny-oneliner">
-          This is not actually youtube. It was made for my portfolio.
+    <div class="content">
+      <div class="banner"></div>
+      <div class="info">
+        <div class="left-side">
+          <div class="pfp"></div>
+          <div class="name-count">
+            <div class="name">Akish tp</div>
+            <div class="count">Subscribers :</div>
+          </div>
         </div>
-        <div class="signature">xx Akish TP</div>
+        <div class="right-side">
+          <a href="">
+            <button>Subscribe</button>
+          </a>
+        </div>
       </div>
-      <div class="socials">
-        <a href="https://www.github.com/akishtp" class="github">🐙🐈‍⬛</a>
-        <a href="https://www.instagram.com/" class="instagram">📸</a>
-        <a href="https://www.twitter.com/" class="twitter">🧢🕊️</a>
-      </div>
-    </footer>
-    <script src="../js/yt.js"></script>
+      <div class="videos"></div>
+    </div>
+    <script src="../js/youtube.js"></script>
   </body>
 </html>
