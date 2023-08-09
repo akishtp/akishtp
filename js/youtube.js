@@ -4,10 +4,12 @@ const apiKey = "AIzaSyBWhedNatmmDNjBLrC0jRfjBwUcmFwDKC8";
 const url_banner = `https://www.googleapis.com/youtube/v3/channels?part=brandingSettings&id=${channelId}&key=${apiKey}`;
 const url_pfp = `https://www.googleapis.com/youtube/v3/channels?part=snippet&fields=items%2Fsnippet%2Fthumbnails%2Fdefault&id=${channelId}&key=${apiKey}`;
 const url_sub_count = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=${apiKey}`;
+const url_video_details = `https://www.googleapis.com/youtube/v3/search?channelId=${channelId}&part=snippet,id&key=${apiKey}`;
 
 const bannerClass = document.querySelector(".banner");
 const pfpClass = document.querySelector(".pfp");
-const subscribersEl = document.querySelector(".count");
+const subscribersClass = document.querySelector(".count");
+const videosClass = document.querySelector(".videos");
 
 async function fetchBanner() {
   try {
@@ -47,6 +49,12 @@ async function fetchPfp() {
 
 async function fetchSubCount() {
   try {
+    const sub_count = await fetch(url_sub_count);
+    if (sub_count.ok) {
+      const in_json = await sub_count.json();
+      const subs = in_json.items[0].statistics.subscriberCount;
+      subscribersClass.innerHTML = `Subscribers: ${subs}`;
+    }
   } catch (error) {
     console.log(error);
   }
@@ -54,3 +62,4 @@ async function fetchSubCount() {
 
 fetchBanner();
 fetchPfp();
+fetchSubCount();
