@@ -64,7 +64,7 @@ body {
   padding: 64px 0 0 64px;
 }
 .content .banner {
-  width: calc(100vw - 64px);
+  width: 100%;
   height: 20vw;
   border-bottom: 0.4vw solid #000;
 }
@@ -118,7 +118,6 @@ body {
   flex-wrap: wrap;
   overflow: hidden;
 }
-
 .videos .video-card-wrapper {
   width: 50%;
   display: flex;
@@ -139,4 +138,39 @@ body {
 .videos .video-card .video-date {
   font-size: 0.8vw;
   color: #cacaca;
+}
+
+@media only screen and (max-width: 669px) {
+  .content .banner {
+    height: 28vh;
+  }
+  .content .info {
+    height: 20vh;
+  }
+  .content .info img {
+    height: 10vh;
+  }
+  .content {
+    padding: 64px 0 0 0;
+  }
+  .sidebar {
+    padding: 0;
+    flex-direction: row;
+    height: 48px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0px;
+    justify-content: space-around;
+    border-top: 0.2vw solid #000;
+    background-color: #dde7f3;
+  }
+  .sidenav {
+    width: calc(100vw / 4);
+    border: 0.2vw solid #000;
+    height: 100%;
+    font-size: 1rem;
+  }
+  .videos .video-card-wrapper {
+    width: 100%;
+  }
 }
