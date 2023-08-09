@@ -4,7 +4,7 @@ const apiKey = "AIzaSyBWhedNatmmDNjBLrC0jRfjBwUcmFwDKC8";
 const url_banner = `https://www.googleapis.com/youtube/v3/channels?part=brandingSettings&id=${channelId}&key=${apiKey}`;
 const url_pfp = `https://www.googleapis.com/youtube/v3/channels?part=snippet&fields=items%2Fsnippet%2Fthumbnails%2Fdefault&id=${channelId}&key=${apiKey}`;
 const url_sub_count = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=${apiKey}`;
-const url_video_details = `https://www.googleapis.com/youtube/v3/search?channelId=${channelId}&part=snippet,id&key=${apiKey}`;
+const url_videos = `https://www.googleapis.com/youtube/v3/search?channelId=${channelId}&part=snippet,id&key=${apiKey}`;
 
 const bannerClass = document.querySelector(".banner");
 const pfpClass = document.querySelector(".pfp");
@@ -54,6 +54,34 @@ async function fetchSubCount() {
       const in_json = await sub_count.json();
       const subs = in_json.items[0].statistics.subscriberCount;
       subscribersClass.innerHTML = `Subscribers: ${subs}`;
+    } else {
+      throw Error("Could not fetch Sub count");
+    }
+  } catch (error) {
+    subscribersClass.innerHTML = "Subscribers: Can't fetch. Check channel 👉";
+  }
+}
+
+async function fetchVideos() {
+  try {
+    const videos = await fetch(url_videos);
+    if (videos.ok) {
+      const in_json = await videos.json();
+      in_json.items.map((video_details) => {
+        if (video_details.id.kind === "youtube#video") {
+          const video_id = video_details.id.videoId;
+          const video_title = video_details.snippet.title;
+          const published_at = video_details.snippet.publishedAt;
+          const thumbnail_url = video_details.snippet.thumbnails.medium.url;
+          var video_card =
+            `<a href="https://www.youtube.com/watch?v=${video_id}" class="video-card" target="_blank" title="Click to watch video">` +
+            `<img src=${thumbnail_url} alt="video-thumbnail" />` +
+            `<div class="video-title">${video_title}</div>` +
+            `<div class="vid-date">${formatDate(published_at)}</div>` +
+            `</a>`;
+          videosClass.innerHTML += video_card;
+        }
+      });
     }
   } catch (error) {
     console.log(error);
@@ -63,3 +91,13 @@ async function fetchSubCount() {
 fetchBanner();
 fetchPfp();
 fetchSubCount();
+fetchVideos();
+
+function formatDate(dateString) {
+  var date = new Date(dateString);
+  return date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
