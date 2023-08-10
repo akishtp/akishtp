@@ -1,20 +1,44 @@
 [
   {
-    "name": "ഹാസ്യം (Hasyam)",
+    "name": "ഹാസ്യം (Hasyam) API",
     "year": "Jun 2023 - Jul 2023",
-    "description": "ശുദ്ധ ഹാസ്യം മരിച്ചിട്ടില്ല (Pure comedy is not dead). API to get Malayalam, Manglish or a Random joke",
+    "description": "ശുദ്ധ ഹാസ്യം മരിച്ചിട്ടില്ല (Pure comedy is not dead). API to get Malayalam or Manglish joke",
     "caseStudy": true,
     "link": "hasyam",
     "icon": "hasyam.png",
-    "tags": ["", ""]
+    "tags": [
+      "web",
+      "html",
+      "API",
+      "full-stack",
+      "full",
+      "frontend",
+      "html",
+      "tailwind",
+      "Nodejs",
+      "node.js",
+      "express"
+    ]
   },
   {
     "name": "CMS Quiz",
     "year": "Apr 2022 - Apr 2023",
     "description": "Quiz App for CMS college of Science and Commerce, Coimbatore ",
-    "caseStudy": false,
+    "caseStudy": true,
     "link": "cms-quiz",
     "icon": "cms.png",
-    "tags": ["", ""]
+    "tags": [
+      "web",
+      "html",
+      "API",
+      "full-stack",
+      "full",
+      "frontend",
+      "html",
+      "tailwind",
+      "Nodejs",
+      "node.js",
+      "express"
+    ]
   }
 ]
