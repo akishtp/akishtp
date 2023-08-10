@@ -85,7 +85,12 @@ async function fetchVideos() {
       });
     }
   } catch (error) {
-    console.log(error);
+    var video_card =
+      `<div class="video-card-wrapper"><a href="https://www.youtube.com/akishtp" class="video-card" target="_blank" title="click to go to youtube">` +
+      `<img src= alt="video-thumbnail" />` +
+      `<div class="video-title">Could not fetch videos</div>` +
+      `<div class="video-date">click to view channel</div></a></div>`;
+    videosClass.innerHTML += video_card;
   }
 }
 
