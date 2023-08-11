@@ -11,6 +11,8 @@ body {
 }
 a {
   text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 .navigation {
   display: flex;
@@ -72,4 +74,5 @@ a {
   padding: 0.4vw 1.6vw;
   font-size: 1.6vw;
   font-weight: 400;
+  cursor: pointer;
 }

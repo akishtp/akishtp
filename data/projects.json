@@ -4,8 +4,8 @@
     "year": "Jun 2023 - Jul 2023",
     "description": "ശുദ്ധ ഹാസ്യം മരിച്ചിട്ടില്ല (Pure comedy is not dead). API to get Malayalam or Manglish joke",
     "caseStudy": true,
-    "link": "hasyam",
-    "icon": "hasyam.png",
+    "username": "hasyam",
+    "link": "https://github.com/akishtp/hasyam-api",
     "tags": [
       "web",
       "html",
@@ -23,10 +23,10 @@
   {
     "name": "CMS Quiz",
     "year": "Apr 2022 - Apr 2023",
-    "description": "Quiz App for CMS college of Science and Commerce, Coimbatore ",
+    "description": "Quiz App for CMS college of Science and Commerce, Coimbatore",
     "caseStudy": true,
-    "link": "cms-quiz",
-    "icon": "cms.png",
+    "username": "cms-quiz",
+    "link": "https://github.com/akishtp/CMS-quiz",
     "tags": [
       "web",
       "html",
@@ -34,11 +34,23 @@
       "full-stack",
       "full",
       "frontend",
-      "html",
       "tailwind",
       "Nodejs",
       "node.js",
-      "express"
+      "express",
+      "reactjs",
+      "react",
+      "css",
+      "react.js"
     ]
+  },
+  {
+    "name": "Count Sheelpula",
+    "year": "Dec 2022",
+    "description": "",
+    "caseStudy": false,
+    "username": "count-sheepula",
+    "link": "https://github.com/akishtp/Count-Sheepula",
+    "tags": ["web", "frontend", "css", "reactjs", "react", "react.js"]
   }
 ]

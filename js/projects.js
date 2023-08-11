@@ -30,19 +30,21 @@ document.addEventListener("DOMContentLoaded", async function () {
         projectClass.innerHTML = `
         <div class="left-side">
           <div>⏺</div>
-          <img src="../assets/Projects/${project.link}/icon.png" />
+          <img src="../assets/Projects/${project.username}/icon.png" />
           <div class="details">
-            <div class="title">${project.name}</div>
-            <div class="description">
-              ${project.description}
-            </div>
+            <a href="${project.link}" target="_blank">
+              <div class="title">${project.name}</div>
+            </a>
+            <div class="description">${project.description}</div>
           </div>
         </div>
         <div class="right-side">
           <div class="year">${project.year}</div>
           ${
             project.caseStudy
-              ? `<a href="./Projects/${project.link}"><button>Case Study</button></a>`
+              ? `<a href="./Projects/${project.username}"
+            ><button>Case Study</button></a
+          >`
               : ""
           }
         </div>
