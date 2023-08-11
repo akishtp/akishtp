@@ -2,7 +2,7 @@
   {
     "name": "ഹാസ്യം (Hasyam) API",
     "year": "Jun 2023 - Jul 2023",
-    "description": "ശുദ്ധ ഹാസ്യം മരിച്ചിട്ടില്ല (Pure comedy is not dead). API to get Malayalam or Manglish joke",
+    "description": "API to get Malayalam or Manglish joke.",
     "caseStudy": true,
     "username": "hasyam",
     "link": "https://github.com/akishtp/hasyam-api",
@@ -22,8 +22,8 @@
   },
   {
     "name": "CMS Quiz",
-    "year": "Apr 2022 - Apr 2023",
-    "description": "Quiz App for CMS college of Science and Commerce, Coimbatore",
+    "year": "Apr 2022 - May 2023",
+    "description": "Quiz App for CMS college of Science and Commerce, Coimbatore.",
     "caseStudy": true,
     "username": "cms-quiz",
     "link": "https://github.com/akishtp/CMS-quiz",
@@ -47,10 +47,52 @@
   {
     "name": "Count Sheelpula",
     "year": "Dec 2022",
-    "description": "",
+    "description": "Count sheeps to go to sleep 🐑🐑🐑.",
     "caseStudy": false,
     "username": "count-sheepula",
     "link": "https://github.com/akishtp/Count-Sheepula",
-    "tags": ["web", "frontend", "css", "reactjs", "react", "react.js"]
+    "tags": ["web", "frontend", "css", "reactjs", "react", "react.js", "game"]
+  },
+  {
+    "name": "purse",
+    "year": "Oct 2022 - Jan 2023",
+    "description": "A budget tracker to effortlessly track and manage your expenses.",
+    "caseStudy": true,
+    "username": "purse",
+    "link": "https://github.com/akishtp/Purse",
+    "tags": [
+      "web",
+      "html",
+      "API",
+      "full-stack",
+      "full",
+      "frontend",
+      "tailwind",
+      "Nodejs",
+      "node.js",
+      "express",
+      "reactjs",
+      "react",
+      "css",
+      "react.js"
+    ]
+  },
+  {
+    "name": "Rexet Video Bot",
+    "year": "Jun 2022",
+    "description": "This bot automatically fetches Post and Comments from reddit and creates it into a video.",
+    "caseStudy": false,
+    "username": "rexet",
+    "link": "https://github.com/akishtp/Rexet-Automatic-Video-Bot",
+    "tags": ["reddit", "python", "bot", "youtube"]
+  },
+  {
+    "name": "Layman Bot",
+    "year": "Jan 2022",
+    "description": "Layman is a Discord bot that specializes in Movies and TV.",
+    "caseStudy": true,
+    "username": "layman",
+    "link": "https://github.com/akishtp/Layman-Bot",
+    "tags": ["discord", "python", "bot", "movies", "series"]
   }
 ]
