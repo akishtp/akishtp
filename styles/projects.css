@@ -1,4 +1,4 @@
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -14,63 +14,63 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+} */
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
 }
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 2vw;
+
+.Loop {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
-.navigation input {
-  width: 30%;
-  height: 42px;
-  border: 0.2vw solid #000;
-  padding: 0 0.4vw;
+
+section {
+  position: relative;
+  text-align: center;
+  min-height: 300px;
+  max-height: 700px;
+  height: 80%;
 }
-.heading {
-  font-size: 8vw;
-  font-weight: 700;
-  line-height: 8vw;
+
+::scrollbar {
+  display: none;
 }
-.project {
-  display: flex;
-  justify-content: space-between;
-  border-top: 0.2vw #000 solid;
-  padding: 0 10vw;
+
+body {
+  font-family: "Avenir Next", Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 100%;
 }
-.project .left-side {
-  display: flex;
-  align-items: center;
-  width: 69%;
+
+.one {
+  background: #81234e;
 }
-.project .right-side {
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  justify-content: center;
-  width: 27%;
+
+.two {
+  background: #df5252;
 }
-.project .title {
-  font-size: 2vw;
-  font-weight: 500;
-  margin: 10px 0;
+
+.three {
+  background: #ff9a56;
 }
-.project .description {
-  font-size: 1.4vw;
+
+.four {
+  background: #371465;
 }
-.project .year {
-  font-size: 1.4vw;
-  font-weight: 600;
-  margin: 10px 0;
-}
-.project img {
-  width: 6vw;
-  margin: 2vw;
-}
-.project .right-side button {
-  border: 0.2vw solid #000;
-  padding: 0.4vw 1.6vw;
-  font-size: 1.6vw;
-  font-weight: 400;
-  cursor: pointer;
+
+h1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  font-size: 80px;
+  letter-spacing: 5px;
+  color: #fff;
+  text-transform: uppercase;
 }
