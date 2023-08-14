@@ -9,11 +9,15 @@ document.addEventListener("DOMContentLoaded", async function () {
         const projectClass = document.createElement("section");
         projectClass.classList.add("project");
         projectClass.innerHTML = `
-          <img src="../assets/Projects/${project.username}/banner.png" alt="cms" />
+          <div class="img-wrapper">
+            <img src="../assets/Projects/${project.username}/banner.png" alt="cms" />
+          </div>
           <div class="description">
             <a class="name">${project.name}</a>
             <div class="case-study">
-              <div class="case-study-text">Case study</div>
+              <div class="case-study-text">
+                ${project.viewMethod}
+              </div>
               <div class="rotator">→</div>
             </div>
           </div>

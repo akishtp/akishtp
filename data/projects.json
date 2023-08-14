@@ -3,7 +3,7 @@
     "name": "ഹാസ്യം (Hasyam) API",
     "year": "Jun 2023 - Jul 2023",
     "description": "API to get Malayalam or Manglish joke.",
-    "caseStudy": true,
+    "viewMethod": "Case study",
     "username": "hasyam",
     "link": "https://github.com/akishtp/hasyam-api",
     "tags": [
@@ -24,7 +24,7 @@
     "name": "CMS Quiz",
     "year": "Apr 2022 - May 2023",
     "description": "Quiz App for CMS college of Science and Commerce, Coimbatore.",
-    "caseStudy": true,
+    "viewMethod": "Case study",
     "username": "cms-quiz",
     "link": "https://github.com/akishtp/CMS-quiz",
     "tags": [
@@ -48,16 +48,16 @@
     "name": "Count Sheelpula",
     "year": "Dec 2022",
     "description": "Count sheeps to go to sleep 🐑🐑🐑.",
-    "caseStudy": false,
+    "viewMethod": "Website",
     "username": "count-sheepula",
     "link": "https://github.com/akishtp/Count-Sheepula",
     "tags": ["web", "frontend", "css", "reactjs", "react", "react.js", "game"]
   },
   {
-    "name": "purse",
+    "name": "Purse",
     "year": "Oct 2022 - Jan 2023",
     "description": "A budget tracker to effortlessly track and manage your expenses.",
-    "caseStudy": true,
+    "viewMethod": "Case study",
     "username": "purse",
     "link": "https://github.com/akishtp/Purse",
     "tags": [
@@ -81,7 +81,7 @@
     "name": "Rexet Video Bot",
     "year": "Jun 2022",
     "description": "This bot automatically fetches Post and Comments from reddit and creates it into a video.",
-    "caseStudy": false,
+    "viewMethod": "Youtube Channel",
     "username": "rexet",
     "link": "https://github.com/akishtp/Rexet-Automatic-Video-Bot",
     "tags": ["reddit", "python", "bot", "youtube"]
@@ -90,7 +90,7 @@
     "name": "Layman Bot",
     "year": "Jan 2022",
     "description": "Layman is a Discord bot that specializes in Movies and TV.",
-    "caseStudy": true,
+    "viewMethod": "Discord server",
     "username": "layman",
     "link": "https://github.com/akishtp/Layman-Bot",
     "tags": ["discord", "python", "bot", "movies", "series"]
