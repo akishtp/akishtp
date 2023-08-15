@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const hamburgesaClass = document.querySelector(".hamburgesa");
   hamburgesaClass.addEventListener("click", function () {
     backgroundClass.classList.toggle("hidden");
+    backgroundClass.classList.remove("init-load-class");
   });
   backgroundClass.addEventListener("click", function () {
     backgroundClass.classList.toggle("hidden");

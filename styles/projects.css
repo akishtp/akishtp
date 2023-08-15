@@ -209,7 +209,10 @@ a {
     margin: 1vw 0;
   }
   .hidden {
-    animation: slideUp 0.5s ease-in-out forwards;
+    animation: slideUp 0.2s ease-in-out forwards;
+  }
+  .init-load-class {
+    display: none;
   }
 }
 
@@ -224,9 +227,9 @@ a {
 
 @keyframes slideDown {
   0% {
-    top: 100vh;
+    transform: translateY(-100%);
   }
   100% {
-    top: 0;
+    transform: translateY(0);
   }
 }
