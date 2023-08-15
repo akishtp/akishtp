@@ -44,14 +44,20 @@ a {
 .right-side label {
   display: flex;
   flex-direction: column;
+  margin: 0.4vw 0;
 }
 .right-side input {
-  height: 3vw;
   font-size: 2vw;
+  height: 3vw;
+}
+textarea {
+  font-size: 1.6vw;
 }
 .right-side input,
 textarea {
   border: 0px solid transparent;
   border-bottom: 0.2vw solid #000;
   background-color: transparent;
+}
+.button {
 }

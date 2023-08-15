@@ -5,7 +5,7 @@
     "description": "API to get Malayalam or Manglish joke.",
     "viewMethod": "Case study",
     "username": "hasyam",
-    "link": "https://github.com/akishtp/hasyam-api",
+    "link": "./projects/hasyam.html",
     "tags": [
       "web",
       "html",
@@ -17,7 +17,9 @@
       "tailwind",
       "Nodejs",
       "node.js",
-      "express"
+      "express",
+      "mobile",
+      "youtube"
     ]
   },
   {
@@ -26,7 +28,7 @@
     "description": "Quiz App for CMS college of Science and Commerce, Coimbatore.",
     "viewMethod": "Case study",
     "username": "cms-quiz",
-    "link": "https://github.com/akishtp/CMS-quiz",
+    "link": "./projects/cms-quiz.html",
     "tags": [
       "web",
       "html",
@@ -41,26 +43,37 @@
       "reactjs",
       "react",
       "css",
-      "react.js"
+      "react.js",
+      "exhibition",
+      "college"
     ]
   },
   {
     "name": "My super awesome shooter game",
     "year": "Jan 2022",
-    "description": "A 2D shooter game made in unity",
+    "description": "A 2D shooter game made in unity.",
     "viewMethod": "itch.io",
     "username": "my-super-awesome-shooter-game",
-    "link": "https://github.com/akishtp/Layman-Bot",
-    "tags": ["game", "unity", "c#", "shooter"]
+    "link": "https://akishtp.itch.io/my-super-awesome-shooter-game",
+    "tags": ["game", "unity", "c#", "shooter", "youtube"]
   },
   {
     "name": "Count Sheelpula",
     "year": "Dec 2022",
-    "description": "Count sheeps to go to sleep 🐑🐑🐑.",
+    "description": "Count sheeps to go to sleep.",
     "viewMethod": "Website",
     "username": "count-sheepula",
-    "link": "https://github.com/akishtp/Count-Sheepula",
-    "tags": ["web", "frontend", "css", "reactjs", "react", "react.js", "game"]
+    "link": "https://count-sheepula.vercel.app/",
+    "tags": [
+      "web",
+      "frontend",
+      "css",
+      "reactjs",
+      "react",
+      "react.js",
+      "game",
+      "youtube"
+    ]
   },
   {
     "name": "Purse",
@@ -68,7 +81,7 @@
     "description": "A budget tracker to effortlessly track and manage your expenses.",
     "viewMethod": "Case study",
     "username": "purse",
-    "link": "https://github.com/akishtp/Purse",
+    "link": "./projects/purse.html",
     "tags": [
       "web",
       "html",
@@ -83,7 +96,8 @@
       "reactjs",
       "react",
       "css",
-      "react.js"
+      "react.js",
+      "youtube"
     ]
   },
   {
@@ -92,7 +106,7 @@
     "description": "This bot automatically fetches Post and Comments from reddit and creates it into a video.",
     "viewMethod": "Youtube",
     "username": "rexet",
-    "link": "https://github.com/akishtp/Rexet-Automatic-Video-Bot",
+    "link": "https://www.youtube.com/@rexet577/featured",
     "tags": ["reddit", "python", "bot", "youtube"]
   },
   {
@@ -101,7 +115,7 @@
     "description": "Layman is a Discord bot that specializes in Movies and TV.",
     "viewMethod": "Discord",
     "username": "layman",
-    "link": "https://github.com/akishtp/Layman-Bot",
-    "tags": ["discord", "python", "bot", "movies", "series"]
+    "link": "./projects/layman.html",
+    "tags": ["discord", "python", "bot", "movies", "series", "hackathon"]
   }
 ]

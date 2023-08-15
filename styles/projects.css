@@ -59,6 +59,10 @@ a {
 .navbar .link:hover {
   background-color: #acacac;
 }
+.navbar .hamburgesa {
+  display: none;
+  cursor: pointer;
+}
 .project {
   display: flex;
   align-items: center;
@@ -138,17 +142,25 @@ a {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+.background {
+  display: none;
+}
 
 @media only screen and (max-width: 669px) {
   .navbar .heading {
     font-size: 4vw;
+    flex-grow: 1;
   }
   .projects {
-    padding: 10vw 0 4vw 0;
+    padding: 12vw 0 4vw 0;
   }
   .navbar {
-    height: 8vw;
+    height: 10vw;
     width: 92%;
+  }
+  .navbar .hamburgesa {
+    display: block;
+    margin: 0 1vw 0 2vw;
   }
   .navbar input {
     height: 4vw;
@@ -164,10 +176,57 @@ a {
   }
   .img-wrapper {
     width: 100%;
-    height: 24vh;
+    height: 22vh;
   }
   .description {
     font-size: 4vw;
     padding: 4vw 0 2vw 0;
+  }
+  .background {
+    position: fixed;
+    z-index: 101;
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slideDown 0.5s ease-in-out forwards;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #c4c4c4b8;
+    backdrop-filter: blur(12px);
+    width: 50vw;
+    font-size: 6vw;
+    border-radius: 2vw;
+    font-weight: 500;
+  }
+  .menu-item {
+    margin: 1vw 0;
+  }
+  .hidden {
+    animation: slideUp 0.5s ease-in-out forwards;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: 0;
   }
 }

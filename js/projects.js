@@ -1,4 +1,17 @@
 const projectsClass = document.querySelector(".projects");
+const searchWord = document.querySelector(".search");
+console.log(searchWord.value);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const backgroundClass = document.querySelector(".background");
+  const hamburgesaClass = document.querySelector(".hamburgesa");
+  hamburgesaClass.addEventListener("click", function () {
+    backgroundClass.classList.toggle("hidden");
+  });
+  backgroundClass.addEventListener("click", function () {
+    backgroundClass.classList.toggle("hidden");
+  });
+});
 
 document.addEventListener("DOMContentLoaded", async function () {
   try {
