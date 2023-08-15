@@ -19,6 +19,7 @@
       "node.js",
       "express",
       "mobile",
+      "mongoDB",
       "youtube"
     ]
   },
@@ -32,6 +33,7 @@
     "tags": [
       "web",
       "html",
+      "MERN",
       "API",
       "full-stack",
       "full",
@@ -39,6 +41,7 @@
       "tailwind",
       "Nodejs",
       "node.js",
+      "mongoDB",
       "express",
       "reactjs",
       "react",
@@ -90,6 +93,8 @@
       "full",
       "frontend",
       "tailwind",
+      "MERN",
+      "mongoDB",
       "Nodejs",
       "node.js",
       "express",
