@@ -147,6 +147,10 @@ a {
 }
 
 @media only screen and (max-width: 669px) {
+  .navbar img {
+    height: unset;
+    width: 69%;
+  }
   .content .banner {
     height: 28vh;
   }
