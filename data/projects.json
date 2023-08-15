@@ -45,6 +45,15 @@
     ]
   },
   {
+    "name": "My super awesome shooter game",
+    "year": "Jan 2022",
+    "description": "A 2D shooter game made in unity",
+    "viewMethod": "itch.io",
+    "username": "my-super-awesome-shooter-game",
+    "link": "https://github.com/akishtp/Layman-Bot",
+    "tags": ["game", "unity", "c#", "shooter"]
+  },
+  {
     "name": "Count Sheelpula",
     "year": "Dec 2022",
     "description": "Count sheeps to go to sleep 🐑🐑🐑.",
@@ -81,7 +90,7 @@
     "name": "Rexet Video Bot",
     "year": "Jun 2022",
     "description": "This bot automatically fetches Post and Comments from reddit and creates it into a video.",
-    "viewMethod": "Youtube Channel",
+    "viewMethod": "Youtube",
     "username": "rexet",
     "link": "https://github.com/akishtp/Rexet-Automatic-Video-Bot",
     "tags": ["reddit", "python", "bot", "youtube"]
@@ -90,7 +99,7 @@
     "name": "Layman Bot",
     "year": "Jan 2022",
     "description": "Layman is a Discord bot that specializes in Movies and TV.",
-    "viewMethod": "Discord server",
+    "viewMethod": "Discord",
     "username": "layman",
     "link": "https://github.com/akishtp/Layman-Bot",
     "tags": ["discord", "python", "bot", "movies", "series"]

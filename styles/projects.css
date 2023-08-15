@@ -7,34 +7,78 @@ body {
   background-color: #dde7f3;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  border: 0.4vw solid #000;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 .projects {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-top: 6vw;
+}
+.navbar {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 1vw;
+  border-radius: 1.2vw;
+  height: 4vw;
+  z-index: 100;
+  background-color: #c4c4c4b8;
+  backdrop-filter: blur(12px);
+  padding: 0 20px;
+}
+.navbar .heading {
+  font-size: 1.8vw;
+  font-weight: 600;
+}
+.navbar input {
+  height: 2vw;
+  width: 25%;
+  padding: 0 10px;
+}
+.navbar .links {
+  display: flex;
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+.navbar .link {
+  display: flex;
+  align-items: center;
+  border-radius: 1vw;
+  height: 3.4vw;
+  padding: 0 20px;
+  transition: background-color 0.4s ease-in-out;
+  margin: 0 2px;
+}
+.navbar .link:hover {
+  background-color: #acacac;
 }
 .project {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(247, 247, 247);
+  background-color: #efefef;
   width: 80%;
   border-radius: 2vw;
   padding: 1vw;
-  margin: 4vw 0;
-  transition: all 0.4s ease-in-out;
+  margin: 2vw 0;
+  transition: all 0.4s;
 }
 .project:hover,
 .project:focus,
 .project:active {
-  background-color: rgb(235, 235, 235);
+  background-color: #dadada;
 }
 .img-wrapper {
   width: 100%;
-  height: 669px;
+  height: 50vh;
   position: relative;
   overflow: hidden;
   border-radius: 1.6vw;
@@ -44,7 +88,7 @@ body {
   top: 0%;
   left: 50%;
   transform: translate(-50%, 0%);
-  transition: all 0.4s ease-in;
+  transition: all 0.4s;
   width: 100%;
 }
 .project:hover img {
@@ -57,7 +101,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 2vw 0 1vw 0;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.4s;
 }
 .project:hover .description {
   width: 96%;
@@ -69,9 +113,13 @@ body {
   background-position-y: 100%;
   background-position-x: 0%;
   background-repeat: no-repeat;
-  transition: background-size 0.4s ease-in-out;
+}
+.name {
+  transition: background-size 0.4s;
 }
 .project:hover .name,
+.project:focus .name,
+.project:active .name,
 .name:hover,
 .name:focus,
 .name:active {
@@ -81,7 +129,7 @@ body {
   display: flex;
 }
 .rotator {
-  transition: all 0.4s ease-in-out;
+  transition: all 0.4s;
 }
 .project:hover .rotator,
 .case-study:hover .rotator {

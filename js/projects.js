@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", async function () {
     if (projects.ok) {
       const in_json = await projects.json();
       in_json.map((project) => {
-        const projectClass = document.createElement("section");
+        const projectClass = document.createElement("a");
+        projectClass.href = project.link;
         projectClass.classList.add("project");
         projectClass.innerHTML = `
           <div class="img-wrapper">
