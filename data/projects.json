@@ -5,7 +5,7 @@
     "description": "API to get Malayalam or Manglish joke.",
     "viewMethod": "Case study",
     "username": "hasyam",
-    "link": "./projects/hasyam.html",
+    "link": "./projects/hasyam/index.html",
     "tags": [
       "web",
       "html",
@@ -29,7 +29,7 @@
     "description": "Quiz App for CMS college of Science and Commerce, Coimbatore.",
     "viewMethod": "Case study",
     "username": "cms-quiz",
-    "link": "./projects/cms-quiz.html",
+    "link": "./projects/cms-quiz/index.html",
     "tags": [
       "web",
       "html",
@@ -84,7 +84,7 @@
     "description": "A budget tracker to effortlessly track and manage your expenses.",
     "viewMethod": "Case study",
     "username": "purse",
-    "link": "./projects/purse.html",
+    "link": "./projects/purse/index.html",
     "tags": [
       "web",
       "html",
@@ -118,9 +118,9 @@
     "name": "Layman Bot",
     "year": "Jan 2022",
     "description": "Layman is a Discord bot that specializes in Movies and TV.",
-    "viewMethod": "Discord",
+    "viewMethod": "Case study",
     "username": "layman",
-    "link": "./projects/layman.html",
+    "link": "./projects/layman/index.html",
     "tags": ["discord", "python", "bot", "movies", "series", "hackathon"]
   }
 ]
