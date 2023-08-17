@@ -14,3 +14,8 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.footer {
+  position: absolute;
+  bottom: 0px;
+  height: 16vw;
+}
