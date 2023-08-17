@@ -31,6 +31,7 @@ a {
   background-color: #c4c4c4b8;
   backdrop-filter: blur(12px);
   padding: 0 2vw;
+  animation: slideDown 0.4s ease-in-out forwards;
 }
 .navbar .heading {
   font-size: 1.8vw;
@@ -73,6 +74,7 @@ a {
   padding: 1vw;
   margin: 2vw 0;
   transition: background-color 0.4s ease-in-out;
+  animation: slideDown 0.4s ease-in-out;
 }
 .project:hover,
 .project:focus,
@@ -212,7 +214,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: slideDown 0.5s ease-in-out forwards;
+    animation: slideDown 0.4s ease-in-out forwards;
   }
   .menu {
     display: flex;
@@ -230,7 +232,7 @@ a {
     margin: 1vw 0;
   }
   .hidden {
-    animation: slideUp 0.2s ease-in-out forwards;
+    animation: slideUp 0.4s ease-in-out forwards;
   }
   .init-load-class {
     display: none;
@@ -240,17 +242,21 @@ a {
 @keyframes slideUp {
   0% {
     transform: translateY(0);
+    opacity: 100%;
   }
   100% {
     transform: translateY(-100%);
+    opacity: 0;
   }
 }
 
 @keyframes slideDown {
   0% {
     transform: translateY(-100%);
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
+    opacity: 100%;
   }
 }

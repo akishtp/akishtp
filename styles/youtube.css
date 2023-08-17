@@ -22,6 +22,7 @@ a {
   padding: 0 0.4vw;
   width: 100vw;
   z-index: 1;
+  animation: slideDown 0.4s ease-in-out forwards;
 }
 .navbar img {
   height: 42px;
@@ -54,6 +55,7 @@ a {
   position: fixed;
   z-index: 0;
   background-color: #dde7f3;
+  animation: slideRight 0.4s ease-in-out forwards;
 }
 .sidenav {
   height: 64px;
@@ -73,6 +75,7 @@ a {
   width: 100%;
   height: 20vw;
   border-bottom: 0.4vw solid #000;
+  animation: slideDown 0.4s ease-in-out forwards;
 }
 .content .banner img {
   width: 100%;
@@ -89,6 +92,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 0 10vw;
+  animation: slideDown 0.4s ease-in-out forwards;
 }
 .content .info {
   display: flex;
@@ -186,6 +190,8 @@ a {
     justify-content: space-around;
     border-top: 0.2vw solid #000;
     background-color: #dde7f3;
+    animation: slideUp 0.4s ease-in-out forwards;
+    z-index: 100;
   }
   .sidenav {
     width: calc(100vw / 4);
@@ -195,5 +201,38 @@ a {
   }
   .videos .video-card-wrapper {
     width: 100%;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
   }
 }
