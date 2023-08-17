@@ -15,7 +15,14 @@ a {
   color: inherit;
 }
 .navbar {
-  height: 64px;
+  height: 6vw;
+  background-color: #000;
+  color: #dde7f3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.6vw;
+  font-weight: 500;
 }
 .main {
   display: flex;
@@ -59,5 +66,87 @@ textarea {
   border-bottom: 0.2vw solid #000;
   background-color: transparent;
 }
-.button {
+.label {
+  display: flex;
+}
+.required {
+  color: #ff4a4a;
+}
+.send-button {
+  width: 50%;
+  height: 3vw;
+  background-color: #000;
+  color: #dde7f3;
+  font-size: 1.4vw;
+  border: none;
+  border-radius: 1vw;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.4vw solid #000;
+  width: 100vw;
+  height: 16vw;
+}
+.me {
+  width: 69%;
+  height: 100%;
+  font-size: 3vw;
+  line-height: 2.6vw;
+  border-right: 0.4vw solid #000;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1vw 2vw;
+}
+.footer .me a {
+  text-decoration: underline;
+  color: #2481de;
+}
+.footer .socials {
+  width: 31%;
+}
+
+@media only screen and (max-width: 669px) {
+  .main {
+    flex-direction: column;
+  }
+  .main .left-side {
+    width: 100%;
+    border: none;
+    border-bottom: 0.4vw solid #000;
+  }
+  .main .right-side {
+    width: 100%;
+    border: none;
+  }
+  .send-button {
+    font-size: 2.8vw;
+    height: 6vw;
+  }
+  .footer {
+    flex-direction: column-reverse;
+    top: 90vw;
+    height: 30vw;
+  }
+  .footer .me {
+    height: 100%;
+    border-right: none;
+    width: 100%;
+    padding: 2vw;
+    font-size: 4vw;
+  }
+  .footer .socials {
+    background-color: #000;
+    color: #dde7f3;
+    border-bottom: 0.4vw solid #000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vw;
+    font-size: 4vw;
+  }
 }
