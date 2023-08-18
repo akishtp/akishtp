@@ -52,7 +52,7 @@ function displayProjects(projects) {
     projectClass.classList.add("project");
     projectClass.innerHTML = `
       <div class="img-wrapper">
-        <img src="../assets/Projects/${project.username}/banner.png" alt="cms" />
+        <img src="../assets/projects/${project.username}/banner.png" alt="cms" />
       </div>
       <div class="description">
         <a class="name">${project.name}</a>
