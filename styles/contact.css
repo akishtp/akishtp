@@ -97,6 +97,7 @@ textarea {
   color: #fff;
   border: none;
   border-bottom: 0.2vw solid #fff;
+  resize: vertical;
 }
 .send-message {
   width: 50%;
@@ -159,7 +160,7 @@ textarea {
   .main .left-side {
     width: 100%;
     border: none;
-    height: 100vw;
+    height: 50vw;
   }
   .main .right-side {
     width: 100%;
