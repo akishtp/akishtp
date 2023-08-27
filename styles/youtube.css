@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -141,8 +143,12 @@ a {
   background-color: #000;
   color: #fff;
   text-decoration: none;
-  padding: 10px 8px;
+  padding: 0.6vw 0.5vw;
   margin: 20px;
+  width: 54%;
+}
+.video-card img {
+  width: 100%;
 }
 .videos .video-card .video-title {
   font-size: 1.2vw;
@@ -156,9 +162,10 @@ a {
 .footer {
   height: 16vw;
   border-bottom: 0.4vw solid #000;
-  width: 100vw;
+  width: calc(100vw - 64px);
   display: flex;
   margin-left: 64px;
+  border-right: 0.4vw solid #000;
 }
 .footer .me {
   width: 69%;
@@ -238,6 +245,7 @@ a {
     height: 30vw;
     margin: 0 0 48px 0;
     border: none;
+    width: 100vw;
   }
   .footer .me {
     width: 100%;
