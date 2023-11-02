@@ -3,9 +3,9 @@
     "name": "ഹാസ്യം (Hasyam) API",
     "year": "Jun 2023 - Jul 2023",
     "description": "API to get Malayalam or Manglish joke.",
-    "viewMethod": "Case study",
+    "viewMethod": "Website",
     "username": "hasyam",
-    "link": "./projects/hasyam/index.html",
+    "link": "https://akishtp.github.io/hasyam-api/",
     "tags": [
       "web",
       "html",
@@ -27,9 +27,9 @@
     "name": "CMS Quiz",
     "year": "Apr 2023 - May 2023",
     "description": "Quiz App for CMS college of Science and Commerce, Coimbatore.",
-    "viewMethod": "Case study",
+    "viewMethod": "Website",
     "username": "cms-quiz",
-    "link": "./projects/cms-quiz/index.html",
+    "link": "https://cms-quiz.vercel.app/",
     "tags": [
       "web",
       "html",
@@ -82,9 +82,9 @@
     "name": "Purse",
     "year": "Oct 2022 - Jan 2023",
     "description": "A budget tracker to effortlessly track and manage your expenses.",
-    "viewMethod": "Case study",
+    "viewMethod": "Website",
     "username": "purse",
-    "link": "./projects/purse/index.html",
+    "link": "https://verlow-purse-akishtp.vercel.app/",
     "tags": [
       "web",
       "html",
@@ -118,9 +118,9 @@
     "name": "Layman Bot",
     "year": "Jan 2022",
     "description": "Layman is a Discord bot that specializes in Movies and TV.",
-    "viewMethod": "Case study",
+    "viewMethod": "Discord",
     "username": "layman",
-    "link": "./projects/layman/index.html",
+    "link": "https://discord.com/invite/KqGUtNwQE4",
     "tags": ["discord", "python", "bot", "movies", "series", "hackathon"]
   }
 ]
