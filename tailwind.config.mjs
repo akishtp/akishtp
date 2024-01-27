@@ -24,6 +24,14 @@ export default {
             fontWeight: "700",
           },
         ],
+        "hero-selected": [
+          "20vh",
+          {
+            lineHeight: "16vh",
+            letterSpacing: "-0.4rem",
+            fontWeight: "700",
+          },
+        ],
       },
     },
   },
