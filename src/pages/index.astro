@@ -13,13 +13,13 @@ import { ViewTransitions } from 'astro:transitions';
 	</head>
 	<body class="bg-black">
 		<div class="h-40vh bg-black text-white flex flex-col justify-between">
-			<div class="text-hero-selected">AKISH T P</div>
-			<div class="flex items-end flex-col">
+			<div class="text-hero-selected" transition:name="akishtp-text">AKISH T P</div>
+			<div class="flex items-end flex-col p-1">
 				<div class="text-2xl">CS Student</div>
 				<div class="text-2xl">does some web development</div>
-				<div class="text-2xl flex">watches lot of&nbsp;
+				<div class="text-2xl flex leading-none">watches lot of&nbsp;
 					<div class="group flex flex-col cursor-pointer justify-center">
-						<div class="text-red-500 leading-none">Youtube</div>
+						<div class="text-red-500" transition:name="youtube-text">Youtube</div>
 						<div class="h-0.5 w-0 bg-red-500 group-hover:w-full transition-all"></div>
 					</div>
 				</div>

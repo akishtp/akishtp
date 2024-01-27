@@ -8,15 +8,42 @@ import { ViewTransitions } from 'astro:transitions';
 		<ViewTransitions />
     </head>
     <body class="bg-black">
-        <div class="h-16 bg-black text-white flex justify-between items-center" transition:name="contact-nav">
-            <div transition:name="contact-text">CONTACT</div>
-            <div class="flex">
+        <div class="h-20 bg-black text-white flex justify-between items-center text-3xl" transition:name="contact-nav">
+            <div transition:name="contact-text" class="w-1/4 flex justify-center">CONTACT</div>
+            <div class="w-3/4 flex justify-around">
+                <a href="/" transition:name="home-text">HOME</a>
                 <div transition:name="projects-text">PROJECTS</div>
                 <div transition:name="gallery-text">GALLERY</div>
+                <div transition:name="youtube-text">YOUTUBE</div>
             </div>
         </div>
-        <div class="bg-white">
-            hullo
+        <div class="bg-white relative overflow-hidden h-16 border-y-4 border-black">
+            <div class="h-14 animate-marquee absolute overflow-hidden flex justify-between items-center w-full text-3xl">
+                <div>The contact form does not work</div>
+                <div>message me via instagram instead</div>
+                <div>click here to view my instagram</div>
+            </div>
+        </div>
+        <div class="bg-white border-y-4 border-black flex">
+            <div class="w-2/5 bg-black flex items-center justify-center text-white">
+                hullo
+            </div>
+            <form class="w-3/5 bg-white border-x-4 border-black flex flex-col p-10">
+                <div class="flex justify-between py-1">
+                    <label class="w-[49%] flex flex-col">
+                        Name:<input class="bg-black h-10 text-white px-4"/>
+                    </label>
+                    <label class="w-[49%] flex flex-col">
+                        Email:<input class="bg-black h-10 text-white px-4"/>
+                    </label>
+                </div>
+                <label class="flex flex-col py-1">
+                    Phone:<input class="bg-black h-10 text-white px-4"/>
+                </label>
+                <label class="flex flex-col py-1">
+                    Message:<textarea class="bg-black text-white px-4 py-2" rows="5"></textarea>
+                </label>
+            </form>
         </div>
     </body>
 </html>

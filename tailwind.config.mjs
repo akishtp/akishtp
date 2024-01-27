@@ -33,6 +33,15 @@ export default {
           },
         ],
       },
+      keyframes: {
+        marquee: {
+          "0%": { left: "100%" },
+          "100%": { left: "-100%" },
+        },
+      },
+      animation: {
+        marquee: "marquee 24s linear infinite",
+      },
     },
   },
   plugins: [],
