@@ -1,0 +1,38 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Akish T P</title>
+		<ViewTransitions />
+	</head>
+	<body class="bg-black">
+		<div class="h-40vh bg-black text-white flex flex-col justify-between">
+			<div class="text-hero-selected" transition:name="akishtp-text">AKISH T P</div>
+			<div class="flex items-end flex-col p-1">
+				<div class="text-2xl">CS Student</div>
+				<div class="text-2xl">does some web development</div>
+				<div class="text-2xl flex leading-none">watches lot of&nbsp;
+					<div class="group flex flex-col cursor-pointer justify-center">
+						<div class="text-red-500" transition:name="youtube-text">Youtube</div>
+						<div class="h-0.5 w-0 bg-red-500 group-hover:w-full transition-all"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg-projects flex items-center h-20vh text-hero overflow-hidden border-y-4 border-black hover:bg-projects-hover hover:text-neutral-100 cursor-pointer">
+			<div transition:name="projects-text">PROJECTS</div>
+		</div>
+		<div class="bg-gallery flex items-center h-20vh text-hero overflow-hidden border-y-4 border-black hover:bg-gallery-hover hover:text-neutral-100 cursor-pointer">
+			<div transition:name="gallery-text">GALLERY</div>
+		</div>
+		<a href="./contact" class="bg-primary flex items-center h-20vh text-hero overflow-hidden border-y-4 border-black hover:bg-primary-hover hover:text-neutral-100 cursor-pointer" transition:name="contact-nav">
+			<div transition:name="contact-text">CONTACT</div>
+		</a>
+	</body>
+</html>
