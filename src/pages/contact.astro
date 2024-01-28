@@ -7,8 +7,8 @@ import { ViewTransitions } from 'astro:transitions';
         <title>Contact | Akish T P</title>
 		<ViewTransitions />
     </head>
-    <body class="bg-black">
-        <div class="h-20 bg-black text-white flex justify-between items-center text-3xl" transition:name="contact-nav">
+    <body class="bg-black flex flex-col">
+        <div class="h-[12vh] bg-black text-white flex justify-between items-center text-3xl" transition:name="contact-nav">
             <div transition:name="contact-text" class="w-1/4 flex justify-center">CONTACT</div>
             <div class="w-3/4 flex justify-around">
                 <a href="/" transition:name="home-text">HOME</a>
@@ -17,33 +17,55 @@ import { ViewTransitions } from 'astro:transitions';
                 <div transition:name="youtube-text">YOUTUBE</div>
             </div>
         </div>
-        <div class="bg-white relative overflow-hidden h-16 border-y-4 border-black">
-            <div class="h-14 animate-marquee absolute overflow-hidden flex justify-between items-center w-full text-3xl">
-                <div>The contact form does not work</div>
-                <div>message me via instagram instead</div>
-                <div>click here to view my instagram</div>
-            </div>
+        <div class="bg-white relative overflow-hidden h-[9vh] border-y-4 border-black">
+            <a href="https://instagram.com/akish.tp" class="h-[9vh] animate-marquee absolute overflow-hidden flex justify-between items-center w-full text-3xl">
+                <div>The form does not work</div>
+                <div>it has no submit button</div>
+                <div>click here to view instagram</div>
+            </a>
         </div>
-        <div class="bg-white border-y-4 border-black flex">
+        <div class="bg-white border-y-4 border-black flex h-[52vh]">
             <div class="w-2/5 bg-black flex items-center justify-center text-white">
                 hullo
             </div>
-            <form class="w-3/5 bg-white border-x-4 border-black flex flex-col p-10">
-                <div class="flex justify-between py-1">
-                    <label class="w-[49%] flex flex-col">
-                        Name:<input class="bg-black h-10 text-white px-4"/>
+            <form class="w-3/5 bg-white border-x-4 border-black flex flex-col items-center justify-center px-8">
+                <div class="flex justify-between py-1 w-full">
+                    <label class="w-[49%] flex flex-col text-2xl">
+                        <div>Name<span class="text-red-500">*</span>:</div>
+                        <input class="bg-black h-[6vh] text-white px-4"/>
                     </label>
-                    <label class="w-[49%] flex flex-col">
-                        Email:<input class="bg-black h-10 text-white px-4"/>
+                    <label class="w-[49%] flex flex-col text-2xl">
+                        <div>Email<span class="text-red-500">*</span>:</div>
+                        <input class="bg-black h-[6vh] text-white px-4" type="email"/>
                     </label>
                 </div>
-                <label class="flex flex-col py-1">
-                    Phone:<input class="bg-black h-10 text-white px-4"/>
+                <label class="flex flex-col py-1 text-2xl w-full">
+                    Phone:<input class="bg-black h-[6vh] text-white px-4"/>
                 </label>
-                <label class="flex flex-col py-1">
-                    Message:<textarea class="bg-black text-white px-4 py-2" rows="5"></textarea>
+                <label class="flex flex-col py-1 text-2xl w-full">
+                    <div>Message<span class="text-red-500">*</span>:</div>
+                    <textarea class="bg-black text-white px-4 py-2 h-[14vh]"></textarea>
                 </label>
             </form>
+        </div>
+        <div class="bg-white relative overflow-hidden h-[9vh] border-y-4 border-black">
+            <a href="https://instagram.com/akish.tp" class="h-[9vh] animate-marquee absolute overflow-hidden flex justify-between items-center w-full text-3xl">
+                <div>The form does not work</div>
+                <div>it has no submit button</div>
+                <div>click here to view instagram</div>
+            </a>
+        </div>
+        <div class="text-white flex justify-between h-[18vh]">
+            <div class="text-xl">My Socials:</div>
+            <div class="flex justify-end flex-col items-end">
+                <div>location: India</div>
+                <div>mail: makishtp(at)gmail(dot)com</div>
+            </div>
+            <div class="flex justify-end flex-col items-end">
+                <a href="https://instagram.com/akish.tp">Instagram: @akish.tp</a>
+                <a href="https://github.com/akishtp">Github: akishtp</a>
+                <a href="https://twitter.com/imAkishtp">X: @imAkishtp</a>
+            </div>
         </div>
     </body>
 </html>
