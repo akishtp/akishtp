@@ -25,13 +25,13 @@ import { ViewTransitions } from 'astro:transitions';
 				</div>
 			</div>
 		</div>
-		<div class="bg-projects flex items-center h-20vh text-hero overflow-hidden border-y-4 border-black hover:bg-projects-hover hover:text-neutral-100 cursor-pointer">
+		<a href="./projects" class="bg-projects flex items-center h-20vh text-hero overflow-hidden border-y-4 border-black hover:bg-projects-hover hover:text-neutral-100" transition:name="projects-nav">
 			<div transition:name="projects-text">PROJECTS</div>
-		</div>
-		<div class="bg-gallery flex items-center h-20vh text-hero overflow-hidden border-y-4 border-black hover:bg-gallery-hover hover:text-neutral-100 cursor-pointer">
+		</a>
+		<a href="./gallery" class="bg-gallery flex items-center h-20vh text-hero overflow-hidden border-y-4 border-black hover:bg-gallery-hover hover:text-neutral-100">
 			<div transition:name="gallery-text">GALLERY</div>
-		</div>
-		<a href="./contact" class="bg-primary flex items-center h-20vh text-hero overflow-hidden border-y-4 border-black hover:bg-primary-hover hover:text-neutral-100 cursor-pointer" transition:name="contact-nav">
+		</a>
+		<a href="./contact" class="bg-primary flex items-center h-20vh text-hero overflow-hidden border-y-4 border-black hover:bg-primary-hover hover:text-neutral-100" transition:name="contact-nav">
 			<div transition:name="contact-text">CONTACT</div>
 		</a>
 	</body>
