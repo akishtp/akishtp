@@ -8,13 +8,15 @@ import { ViewTransitions } from 'astro:transitions';
 		<ViewTransitions />
     </head>
     <body class="bg-black flex flex-col">
+        <div transition:name="projects-nav"></div>
+        <div transition:name="gallery-nav"></div>
         <div class="h-[12vh] bg-black text-white flex justify-between items-center text-3xl" transition:name="contact-nav">
             <div transition:name="contact-text" class="w-1/4 flex justify-center">CONTACT</div>
             <div class="w-3/4 flex justify-around">
-                <a href="/">HOME</a>
-                <div>PROJECTS</div>
-                <div>GALLERY</div>
-                <div>YOUTUBE</div>
+                <a href="/" transition:name="home-text">HOME</a>
+                <div transition:name="projects-text">PROJECTS</div>
+                <div transition:name="gallery-text">GALLERY</div>
+                <div transition:name="youtube-text">YOUTUBE</div>
             </div>
         </div>
         <div class="bg-white relative overflow-hidden h-[9vh] border-y-4 border-black">
