@@ -1,5 +1,5 @@
 ---
-
+import '../styles.css'
 ---
 
 <html lang="en">
@@ -8,19 +8,55 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Akish T P</title>
 	</head>
-	<body class="bg-black text-white h-screen">
-		<div class="h-2/5 flex flex-col justify-between">
-			<div>AKISH T P</div>
-			<div class="flex items-end flex-col">
-				<div>CS Student</div>
-				<div>does some web development</div>
-				<div>watches a lot of Youtube</div>
+	<body>
+		<div class="hero">
+			<div class="hero-title">AKISH T P</div>
+			<div>
+				<div>Comp Sci graduate</div>
+				<div>Watches a lot of youtube</div>
 			</div>
 		</div>
-		<div class="flex items-center h-1/5 overflow-hidden border-black bg-[#c86fff] text-black">PROJECTS</div>
-		<div class="flex items-center h-1/5 overflow-hidden border-black bg-[#fffa6f] text-black">GALLERY</div>
-		<div class="flex items-center h-1/5 overflow-hidden border-black bg-[#70a0ff] text-black">CONTACT</div>
+		<div class="sub-hero">
+			<span class="sub-hero-title">CONTACT</span>
+		</div>
+		<div class="sub-hero">
+			<span class="sub-hero-title">PROJECTS</span>
+		</div>
+		<div class="sub-hero">
+			<span class="sub-hero-title">WRITINGS</span>
+		</div>
 	</body>
 </html>
+
+<style>
+	html{
+		background-color: #000;
+		color: #fff;
+	}
+	body{
+		font-family: Helvetica, Arial, sans-serif;
+	}
+	.hero{
+		height: 40vh;
+		border-top: .4vh solid #fff;
+		border-bottom: .4vh solid #fff;
+	}
+	.hero-title{
+		font-size: 28vh;
+	}
+	.sub-hero{
+		height: 20vh;
+		border-top: .4vh solid #fff;
+		border-bottom: .4vh solid #fff;
+		overflow-y: hidden;
+	}
+	.sub-hero-title{
+		display: flex;
+		font-size: 28vh;
+		/* align-items: center; */
+		/* justify-content: center; */
+		line-height: 28vh;
+	}
+</style>
