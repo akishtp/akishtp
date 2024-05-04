@@ -13,20 +13,29 @@ import '../styles.css'
 	<body>
 		<div class="hero">
 			<div class="hero-title">AKISH T P</div>
-			<div>
+			<div class="hero-description">
 				<div>Comp Sci graduate</div>
 				<div>Watches a lot of youtube</div>
 			</div>
 		</div>
-		<div class="sub-hero">
+		<a href="./contact" class="sub-hero hero-contact">
 			<span class="sub-hero-title">CONTACT</span>
-		</div>
-		<div class="sub-hero">
+			<span class="sub-hero-title">CONTACT</span>
+			<span class="sub-hero-title">CONTACT</span>
+			<span class="sub-hero-title">CONTACT</span>
+		</a>
+		<a href="./projects" class="sub-hero hero-projects">
 			<span class="sub-hero-title">PROJECTS</span>
-		</div>
-		<div class="sub-hero">
-			<span class="sub-hero-title">WRITINGS</span>
-		</div>
+			<span class="sub-hero-title">PROJECTS</span>
+			<span class="sub-hero-title">PROJECTS</span>
+			<span class="sub-hero-title">PROJECTS</span>
+		</a>
+		<a href="./stuff" class="sub-hero hero-stuff">
+			<span class="sub-hero-title">STUFF</span>
+			<span class="sub-hero-title">STUFF</span>
+			<span class="sub-hero-title">STUFF</span>
+			<span class="sub-hero-title">STUFF</span>
+		</a>
 	</body>
 </html>
 
@@ -42,11 +51,22 @@ import '../styles.css'
 		height: 40vh;
 		border-top: .4vh solid #fff;
 		border-bottom: .4vh solid #fff;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 	.hero-title{
 		font-size: 28vh;
+		font-weight: 600;
+		line-height: 25vh;
+	}
+	.hero-description{
+		display: flex;
+		align-items: flex-end;
+		flex-direction: column;
 	}
 	.sub-hero{
+		white-space: nowrap;
 		height: 20vh;
 		border-top: .4vh solid #fff;
 		border-bottom: .4vh solid #fff;
@@ -55,8 +75,9 @@ import '../styles.css'
 	.sub-hero-title{
 		display: flex;
 		font-size: 28vh;
-		/* align-items: center; */
-		/* justify-content: center; */
-		line-height: 28vh;
+		align-items: center;
+		justify-content: flex-end;
+		line-height: 24vh;
+		font-weight: 600;
 	}
 </style>
