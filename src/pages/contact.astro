@@ -6,7 +6,7 @@ import '../styles.css'
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="generator" content={Astro.generator} />
 		<title>Contact | Akish T P</title>
 	</head>
@@ -67,33 +67,36 @@ import '../styles.css'
                 <a href="https://www.youtube.com/@akishtp"><img src="/logos/youtube.png" alt="youtube logo"></a>
             </div>
         </div>
-        <footer>
+        <!-- <footer>
             <a href="https://akishtp.github.io/Static-Website/">Portfolio v2020</a>
-        </footer>
+        </footer> -->
     </body>
 </html>
 
 <style>
-    html{
+    body{
         background-color: #dbdbdb;
         color: #000;
-    }
-    body{
 		font-family: Helvetica, Arial, sans-serif;
-        font-size: 3vh;
+        font-size: 3dvh;
+        display: flex;
+        flex-direction: column;
+        min-height: 100dvh;
 	}
     nav{
         color: #fff;
-        height: 12vh;
+        height: 12dvh;
         display: flex;
         align-items: center;
         background-color: #000;
         justify-content: space-around;
+        border-bottom: 0.4dvh solid #000;
+        border-top: 0.4dvh solid #000;
     }
     .marquee{
-        border-bottom: 0.4vh solid #000;
-        border-top: 0.4vh solid #000;
-        height: 10vh;
+        border-bottom: 0.4dvh solid #000;
+        border-top: 0.4dvh solid #000;
+        height: 10dvh;
         display: flex;
         align-items: center;
         position: relative;
@@ -108,28 +111,26 @@ import '../styles.css'
         margin: 0 25vw;
     }
     .main-section{
-        border-bottom: 0.4vh solid #000;
-        border-top: 0.4vh solid #000;
-        height: 56vh;
+        border-bottom: 0.4dvh solid #000;
+        border-top: 0.4dvh solid #000;
+        flex: 1;
         display: flex;
     }
     .ddd{
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100%;
         width: 50vw;
-        border-right: 0.4vh solid #000;
+        border-right: 0.4dvh solid #000;
         background-color: #000;
         color: #fff;
     }
     .false-form{
-        height: 100%;
         width: 50vw;
-        border-left: 0.4vh solid #000;
+        border-left: 0.4dvh solid #000;
         display: flex;
         flex-direction: column;
-        padding: 4vh 6vh;
+        padding: 4dvh 6dvh;
     }
     .two-inputs{
         display: flex;
@@ -147,7 +148,7 @@ import '../styles.css'
         flex: 1;
     }
     .false-form input:disabled{
-        height: 6vh;
+        height: 6dvh;
         background-color: #000;
         border: none;
         cursor: text;
@@ -160,17 +161,17 @@ import '../styles.css'
     }
     .submit-button{
         margin: 6px 0;
-        height: 7vh;
-        border: 0.6vh solid #000;
+        height: 7dvh;
+        border: 0.6dvh solid #000;
         width: 42%;
         background-color: transparent;
         cursor: pointer;
-        font-size: 3vh;
+        font-size: 3dvh;
     }
     .logos{
-        border-bottom: 0.4vh solid #000;
-        border-top: 0.4vh solid #000;
-        height: 14vh;
+        border-bottom: 0.4dvh solid #000;
+        border-top: 0.4dvh solid #000;
+        height: 14dvh;
         overflow-x: hidden;
         display: flex;
         align-items: center;
@@ -207,15 +208,28 @@ import '../styles.css'
         display: flex;
     }
     .logos-slider img{
-        height: 6vh;
+        height: 5dvh;
         margin: 0 12vw;
     }
-    footer{
-        border-top: 0.4vh solid #000;
-        height: 22vh;
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
+
+    @media only screen and (max-width: 768px) {
+        .main-section{
+            flex-direction: column;
+        }
+        .ddd{
+            width: 100%;
+            border-right: none;
+            flex: 1;
+        }
+        .false-form{
+            flex: 1;
+            width: 100%;
+            border-left: none;
+            padding: 2dvh 3dvh;
+        }
+        .false-form textarea{
+            flex: 1;
+        }
     }
 
     @keyframes marquee {

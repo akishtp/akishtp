@@ -6,11 +6,56 @@ import '../styles.css'
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="generator" content={Astro.generator} />
 		<title>Projects | Akish T P</title>
 	</head>
 	<body>
-        
+        <nav>
+			<div class="filter-nav">Projects ✮</div>
+			<a href="./" class="nav-item">Home</a>
+			<a href="./contact" class="nav-item">Contact</a>
+			<a href="./youtube" class="nav-item">Youtube</a>
+			<a href="./stuff" class="nav-item">Stuff</a>
+		</nav>
     </body>
 </html>
+
+<style>
+	body{
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 3dvh;
+		background-color: #dbdbdb;
+	}
+	nav{
+		height: 10dvh;
+		display: flex;
+		position: absolute;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+		bottom: 2dvh;
+		background-color: #000000aa;
+		color: #fff;
+		padding: 8px;
+		border-radius: 20px;
+	}
+	.filter-nav{
+		height: 100%;
+		display: flex;
+		align-items: center;
+		background-color: #000;
+		border-radius: 12px;
+		padding: 0 24px;
+	}
+	.nav-item{
+		padding: 0 18px;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.nav-item:last-of-type{
+		margin: 0 6px 0 0;
+	}
+</style>
