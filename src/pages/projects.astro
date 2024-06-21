@@ -1,73 +1,125 @@
 ---
-import '../styles.css'
----
+import BaseLayout from '../layouts/BaseLayout.astro'
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="generator" content={Astro.generator} />
-		<title>Projects | Akish T P</title>
-	</head>
-	<body>
-        <nav>
-			<div class="filter-nav">Projects ✮</div>
-			<a href="./" class="nav-item">Home</a>
-			<a href="./contact" class="nav-item">Contact</a>
-			<a href="./youtube" class="nav-item">Youtube</a>
-			<a href="./stuff" class="nav-item">Stuff</a>
-		</nav>
-		<div class="hero">
-			PROJECTS
-		</div>
-		<div></div>
-    </body>
-</html>
+import { getCollection } from 'astro:content';
+const projects = (await getCollection('projects')).sort((a,b) => b.data.num - a.data.num);
+---
+<BaseLayout title="Projects">
+  <nav>
+    <div class="title">PROJECTS</div>
+    <a href="/" class="nav-item">HOME</a>
+    <a href ="contact" class="nav-item">CONTACT</a>
+    <a href="other" class="nav-item">OTHER</a>
+  </nav>
+  <div class="marquee">LASTEST BLOG</div>
+  <div class="grid">
+    {projects.map((project) => 
+      <div class="project">
+        <a href={`/projects/${project.slug}`}>
+          <img src={project.data.image.url} alt={project.data.image.alt} />
+          <div class="number">{project.data.num}</div>
+          <div>
+            <div class="title">{project.data.title}</div>  
+            <div  class="tags">
+              {project.data.tags.map((tag:string)=>{
+                return <div class="tag">{tag}</div>
+              })}
+            </div>
+          </div>
+        </a>
+      </div>
+    )}
+  </div>
+</BaseLayout>
 
 <style>
-	body{
-		font-size: 3dvh;
-		background-color: #FAF5FF;
-	}
-	nav{
-		height: 10dvh;
-		display: flex;
-		position: absolute;
-		left: 50%;
-		-webkit-transform: translateX(-50%);
-		transform: translateX(-50%);
-		bottom: 2dvh;
-		background-color: #000000aa;
-		color: #fff;
-		padding: 8px;
-		border-radius: 20px;
-	}
-	.filter-nav{
-		height: 100%;
-		display: flex;
-		align-items: center;
-		background-color: #000;
-		border-radius: 12px;
-		padding: 0 24px;
-	}
-	.nav-item{
-		padding: 0 18px;
-		height: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	.nav-item:last-of-type{
-		margin: 0 6px 0 0;
-	}
-	.hero{
-		display: flex;
-		justify-content: center;
-		align-items: flex-end;
-		font-size: 14vw;
-		line-height: 10vw;
-		font-weight: 900;
-		letter-spacing: 2vw;
-	}
+  body{
+    border-top: .4dvh solid #000;
+		border-bottom: .4dvh solid #000;
+    background-color: #FAF5FF;
+    min-height: 100dvh; 
+    nav{
+      height: 12dvh;
+      border-bottom: .4dvh solid #000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'General Sans', sans-serif;
+      .title{
+        font-size: 12dvh;
+        line-height: 12dvh;
+        border-right: .4dvh solid #000;
+      }
+      .title:hover{
+        background-color: #c86fff;
+        color: #fff;
+      }
+      .nav-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 6dvh;
+        flex-grow: 1;
+        padding: 0 4dvh;
+        border-right: .4dvh solid #000;
+        height: 100%;
+      }
+      .nav-item:last-child{
+        border-right: none;
+      }
+      .nav-item:hover{
+        background-color: #000000;
+        color: #ffffff;
+      }
+    }
+    .marquee{
+      height: 12dvh;
+      border-bottom: .2dvh solid #000;
+    }
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      .project{
+        border: .2dvh solid #000;
+        height: 64dvh;
+        position: relative;
+        a{
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        .number{
+          position: absolute;
+          font-size: 36dvh;
+          line-height: 28dvh;
+          bottom: 0;
+          right: 0;
+          -webkit-text-fill-color: transparent;
+          -webkit-text-stroke: 1px;
+        }
+        .title{
+          font-size: 6dvh;
+          font-weight: 500;
+        }
+        img{
+          width: 100%;
+        }
+        .description{
+          font-size: 3dvh;
+        }
+        .tags{
+          display: flex;
+          gap: 2dvh;
+          padding: .4dvh;
+          .tag{
+            border: .2dvh solid #000;
+            border-radius: 18px;
+            padding: 0 12px;
+            font-size: 3dvh;
+          }
+        }
+      }
+    }
+  }
 </style>

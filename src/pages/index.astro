@@ -1,56 +1,47 @@
 ---
-import '../styles.css'
+import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="generator" content={Astro.generator} />
-		<title>Akish T P</title>
-	</head>
-	<body>
-		<div class="hero">
-			<div class="hero-title">AKISH T P</div>
-			<div class="hero-description">
-				<div>Comp Sci graduate</div>
-				<div>Watches a lot of youtube</div>
-			</div>
-		</div>
-		<div class="sub-hero hero-contact" sub-hero-contact>
-			<div class="sub-hero-slider">
-				<div class="sub-hero-title">CONTACT</div>
-				<span class="sub-hero-title hover-hidden">CONTACT</span>
-			</div>
-			<div class="sub-hero-slider hover-hidden">
-				<div class="sub-hero-title">CONTACT</div>
-				<div class="sub-hero-title">CONTACT</div>
-			</div>
-		</div>
-		<div class="sub-hero hero-projects" sub-hero-projects>
-			<div class="sub-hero-slider">
-				<span class="sub-hero-title">PROJECTS</span>
-				<span class="sub-hero-title hover-hidden">PROJECTS</span>
-			</div>
-			<div class="sub-hero-slider hover-hidden">
-				<span class="sub-hero-title">PROJECTS</span>
-				<span class="sub-hero-title">PROJECTS</span>
-			</div>
-		</div>
-		<div class="sub-hero hero-stuff" sub-hero-stuff>
-			<div class="sub-hero-slider">
-				<span class="sub-hero-title">STUFF</span>
-				<span class="sub-hero-title hover-hidden">STUFF</span>
-			</div>
-			<div class="sub-hero-slider hover-hidden">
-				<span class="sub-hero-title">STUFF</span>
-				<span class="sub-hero-title">STUFF</span>
-			</div>
-		</div>
-		<script src="../scripts/hero.js"></script>
-	</body>
-</html>
+<BaseLayout title="Akish T P">
+  <div class="hero">
+	<div class="hero-title">AKISH T P</div>
+	<div class="hero-description">
+	  <div>Comp Sci graduate</div>
+	  <div>Watches a lot of youtube</div>
+	</div>
+  </div>
+  <div class="sub-hero hero-contact" sub-hero-contact>
+	<div class="sub-hero-slider">
+	  <div class="sub-hero-title">CONTACT</div>
+	  <span class="sub-hero-title hover-hidden">CONTACT</span>
+	</div>
+	<div class="sub-hero-slider hover-hidden">
+	  <div class="sub-hero-title">CONTACT</div>
+	  <div class="sub-hero-title">CONTACT</div>
+	</div>
+  </div>
+  <div class="sub-hero hero-projects" sub-hero-projects>
+	<div class="sub-hero-slider">
+	  <span class="sub-hero-title">PROJECTS</span>
+	  <span class="sub-hero-title hover-hidden">PROJECTS</span>
+	</div>
+	<div class="sub-hero-slider hover-hidden">
+	  <span class="sub-hero-title">PROJECTS</span>
+	  <span class="sub-hero-title">PROJECTS</span>
+	</div>
+  </div>
+	<div class="sub-hero hero-stuff" sub-hero-stuff>
+	  <div class="sub-hero-slider">
+		<span class="sub-hero-title">STUFF</span>
+		<span class="sub-hero-title hover-hidden">STUFF</span>
+	  </div>
+	  <div class="sub-hero-slider hover-hidden">
+		<span class="sub-hero-title">STUFF</span>
+		<span class="sub-hero-title">STUFF</span>
+  	</div>
+  </div>
+  <script src="../scripts/hero.js"></script>
+</BaseLayout>
 
 <style>
 	body{
@@ -68,7 +59,7 @@ import '../styles.css'
 		color: #fff;
 	}
 	.hero-title{
-		font-family: "Satoshi", sans-serif;
+		font-family: 'General Sans', sans-serif;
 		font-size: 28dvh;
 		font-weight: 600;
 		line-height: 20dvh;
@@ -108,9 +99,9 @@ import '../styles.css'
 	.sub-hero-title{
 		font-size: 34dvh;
 		line-height: 28dvh;
-		font-weight: 900;
+		font-weight: 600;
 		margin: 0 0 0 8vw;
-		font-family: "Satoshi", sans-serif;
+		font-family: 'General Sans', sans-serif;
 	}
 
 	.hero-contact{
@@ -138,7 +129,7 @@ import '../styles.css'
 		color: #fff;
 	}
 
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 1024px) {
 		.hero{
 			height: 76dvh;
 		}
