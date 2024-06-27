@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+
+const allWritings = await getCollection("writing");
+---
+
+<Layout pageTitle="Writings">
+    <nav class="flex justify-between items-center text-[46px] fixed w-full top-0 px-4 bg-red-500 h-[42px]">
+        <div class="flex gap-4">
+            <a href="/">HOME</a>
+            <a href="projects">PROJECTS</a>
+        </div>
+        <img src="writings-outline.svg" alt="WRITINGS" class="absolute top-[42px] w-[calc(100vw-32px)] h-[calc(100vw*(87.577/512))] transition-all duration-1000" id="header">
+        <a href="contact">CONTACT</a>
+    </nav>
+    <main class="mt-[calc((100vw*(87.577/512))+42px)] grid grid-cols-1 border-y-2 border-black md:grid-cols-2 lg:grid-cols-3">
+        {allWritings.map(writing => {
+            return(
+                <a href={`writing/${writing.slug}`} class="border-2 border-black p-2">
+                    <img src={writing.data.image} alt={writing.data.imgDesc} />
+                    <div class="text-[24px]">{writing.data.title}</div>
+                    <div class="flex gap-2">{writing.data.tags.map(tag=>{
+                        return <div>#{tag}</div>
+                    })}</div>
+                </a>
+            )
+        })}
+    </main>
+    <script src="../scripts/writingsHeader.ts" />
+</Layout>

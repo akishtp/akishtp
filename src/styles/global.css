@@ -1,0 +1,5 @@
+@import url("https://api.fontshare.com/v2/css?f[]=epilogue@900&display=swap");
+
+body {
+  font-family: "Epilogue", sans-serif;
+}
