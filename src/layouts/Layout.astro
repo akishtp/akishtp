@@ -1,5 +1,5 @@
 ---
-const { pageTitle } = Astro.props;
+const { pageTitle, bg } = Astro.props;
 import '../styles/global.css';
 ---
 
@@ -11,7 +11,7 @@ import '../styles/global.css';
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 	</head>
-	<body>
+	<body style={{ backgroundColor: bg }}>
 		<slot />
 	</body>
 </html>
