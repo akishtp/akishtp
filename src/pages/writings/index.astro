@@ -36,6 +36,7 @@ import Layout from "../../layouts/Layout.astro";
 				svgWrapper!.classList.add("top-0");
 				svgWrapper!.classList.add("h-full");
 				navbar!.classList.add("pb-0");
+				navbar!.classList.remove("pb-[100px]");
 				mainMain!.classList.add("pt-[72px]");
 			} else {
 				svgText!.setAttribute("fill", "none");
@@ -45,6 +46,7 @@ import Layout from "../../layouts/Layout.astro";
 				svgWrapper!.classList.remove("top-0");
 				svgWrapper!.classList.remove("h-full");
 				navbar!.classList.remove("pb-0");
+				navbar!.classList.add("pb-[100px]");
 				mainMain!.classList.remove("pt-[72px]");
 			}
 		};
