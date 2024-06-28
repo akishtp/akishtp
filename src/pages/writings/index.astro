@@ -5,28 +5,28 @@ import { getCollection } from "astro:content";
 const writings = await getCollection('writing');
 ---
 
-<Layout pageTitle="projects" bg="#FFFEDB">
-	<nav id="navbar" class="flex justify-between text-[48px] tracking-[-2px] border-b-2 border-black fixed w-full pb-[172px] transition-all bg-[#FFFEDB]">
-		<div class="flex gap-4">
+<Layout pageTitle="projects" bg="#FEF9C3">
+	<nav id="navbar" class="flex justify-between text-[48px] tracking-[-2px] border-b-2 border-black fixed w-full pb-[218px] transition-all bg-[#FEF9C3] z-100" transition:name=`writings-navbar`>
+		<div class="flex gap-6">
 			<a href="/">HOME</a>
 			<a href="projects">PROJECTS</a>
 		</div>
-		<div class="w-screen absolute top-[48px] transition-all h-[244px]" id="svg-wrapper">
+		<div class="w-screen absolute top-[48px] transition-all h-[306px]" id="svg-wrapper">
 			<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-				<text class="transition-all" id="svg-text" textLength="100%" x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" dominant-baseline="middle"  fill="none" stroke="#000000" stroke-width="4" font-size="244">WRITINGS</text>
+				<text class="transition-all" id="svg-text" textLength="100%" x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" dominant-baseline="middle"  fill="none" stroke="#000000" stroke-width="4" font-size="306">WRITINGS</text>
 			</svg>
 		</div>
 		<a href="contact">CONTACT</a>
 	</nav>
 	
-	<main class="pt-[246px] transition-all grid grid-cols-3" id="main-content">
+	<main class="pt-[292px] transition-all grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3" id="main-content">
 		{writings.map(writing=>{
 			return(
-				<a href={`writings/${writing.slug}`} class="border-2 border-black p-2 flex flex-col gap-4">
-					<img src={writing.data.image.src} alt={writing.data.image.alt} />
+				<a href={writing.slug} class="border-2 border-black p-2 flex flex-col gap-4">
+					<img src={writing.data.image.src} alt={writing.data.image.alt} transition:name=`writing-image-${writing.data.title}` class="z-10" />
 					<div>
 						<div class="text-[24px]">{writing.data.title}</div>
-						<div class="flex gap-4">
+						<div class="flex gap-2">
 							{writing.data.tags.map(tag=>{
 								return <div>#{tag}</div>
 							})}
@@ -53,23 +53,23 @@ const writings = await getCollection('writing');
 				svgWrapper!.classList.add("top-0");
 				svgWrapper!.classList.remove("top-[48px]");
 				svgWrapper!.classList.add("h-full");
-				svgWrapper!.classList.remove("h-[244px]");
+				svgWrapper!.classList.remove("h-[306px]");
 				navbar!.classList.add("pb-0");
-				navbar!.classList.remove("pb-[172px]");
-				mainMain!.classList.remove("pt-[246px]");
+				navbar!.classList.remove("pb-[218px]");
+				mainMain!.classList.remove("pt-[292px]");
 				mainMain!.classList.add("pt-[72px]");
 			} else {
 				svgText!.setAttribute("fill", "none");
 				svgText!.setAttribute("stroke-width", "4");
 				svgText!.setAttribute("textLength", "100%");
-				svgText!.setAttribute("font-size", "244");
+				svgText!.setAttribute("font-size", "306");
 				svgWrapper!.classList.remove("top-0");
 				svgWrapper!.classList.add("top-[48px]");
 				svgWrapper!.classList.remove("h-full");
-				svgWrapper!.classList.add("h-[244px]");
+				svgWrapper!.classList.add("h-[306px]");
 				navbar!.classList.remove("pb-0");
-				navbar!.classList.add("pb-[172px]");
-				mainMain!.classList.add("pt-[246px]");
+				navbar!.classList.add("pb-[218px]");
+				mainMain!.classList.add("pt-[292px]");
 				mainMain!.classList.remove("pt-[72px]");
 			}
 		};

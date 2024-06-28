@@ -1,5 +1,5 @@
 ---
-title: "Hello Writings"
+title: "Hello Writings 2"
 tags: ["hello", "sample"]
 image:
   src: "me.jpg"
