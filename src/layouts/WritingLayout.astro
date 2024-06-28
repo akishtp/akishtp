@@ -17,7 +17,7 @@ const { writing } = Astro.props;
         </nav>
         <div class="flex flex-col gap-4">
             <div>
-                <img src={`/${writing.data.image}`} alt="" />
+                <img src={`/${writing.data.image.src}`} alt={writing.data.image.alt} />
                 <span class="text-sm">a description of the image</span>
             </div>
             <div class="text-6xl">{writing.data.title}</div>

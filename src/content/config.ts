@@ -5,8 +5,10 @@ const writingCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     tags: z.array(z.string()),
-    image: z.string(),
-    imgDesc: z.string(),
+    image: z.object({
+      src: z.string(),
+      alt: z.string(),
+    }),
     date: z.date(),
   }),
 });

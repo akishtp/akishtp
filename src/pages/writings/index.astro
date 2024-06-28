@@ -1,23 +1,40 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+
+import { getCollection } from "astro:content";
+const writings = await getCollection('writing');
 ---
 
 <Layout pageTitle="projects" bg="#FFFEDB">
-	<nav id="navbar" class="flex justify-between text-[48px] tracking-[-2px] border-b-2 border-black fixed w-full pb-[100px] transition-all">
+	<nav id="navbar" class="flex justify-between text-[48px] tracking-[-2px] border-b-2 border-black fixed w-full pb-[172px] transition-all bg-[#FFFEDB]">
 		<div class="flex gap-4">
 			<a href="/">HOME</a>
 			<a href="projects">PROJECTS</a>
 		</div>
-		<div class="w-screen absolute top-[48px] transition-all" id="svg-wrapper">
+		<div class="w-screen absolute top-[48px] transition-all h-[244px]" id="svg-wrapper">
 			<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-				<text class="transition-all" id="svg-text" textLength="100%" x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" dominant-baseline="middle"  fill="none" stroke="#000000" stroke-width="2" font-size="144">WRITINGS</text>
+				<text class="transition-all" id="svg-text" textLength="100%" x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" dominant-baseline="middle"  fill="none" stroke="#000000" stroke-width="4" font-size="244">WRITINGS</text>
 			</svg>
 		</div>
 		<a href="contact">CONTACT</a>
 	</nav>
 	
-	<main class="pt-[172px] h-[200vh] transition-all" id="main-content">
-		hello
+	<main class="pt-[246px] transition-all grid grid-cols-3" id="main-content">
+		{writings.map(writing=>{
+			return(
+				<a href={`writings/${writing.slug}`} class="border-2 border-black p-2 flex flex-col gap-4">
+					<img src={writing.data.image.src} alt={writing.data.image.alt} />
+					<div>
+						<div class="text-[24px]">{writing.data.title}</div>
+						<div class="flex gap-4">
+							{writing.data.tags.map(tag=>{
+								return <div>#{tag}</div>
+							})}
+						</div>
+					</div>
+				</a>
+			);
+		})}
 	</main>
 
 	<script>
@@ -34,19 +51,25 @@ import Layout from "../../layouts/Layout.astro";
 				svgText!.setAttribute("textLength", "0");
 				svgText!.setAttribute("font-size", "48");
 				svgWrapper!.classList.add("top-0");
+				svgWrapper!.classList.remove("top-[48px]");
 				svgWrapper!.classList.add("h-full");
+				svgWrapper!.classList.remove("h-[244px]");
 				navbar!.classList.add("pb-0");
-				navbar!.classList.remove("pb-[100px]");
+				navbar!.classList.remove("pb-[172px]");
+				mainMain!.classList.remove("pt-[246px]");
 				mainMain!.classList.add("pt-[72px]");
 			} else {
 				svgText!.setAttribute("fill", "none");
-				svgText!.setAttribute("stroke-width", "2");
+				svgText!.setAttribute("stroke-width", "4");
 				svgText!.setAttribute("textLength", "100%");
-				svgText!.setAttribute("font-size", "144");
+				svgText!.setAttribute("font-size", "244");
 				svgWrapper!.classList.remove("top-0");
+				svgWrapper!.classList.add("top-[48px]");
 				svgWrapper!.classList.remove("h-full");
+				svgWrapper!.classList.add("h-[244px]");
 				navbar!.classList.remove("pb-0");
-				navbar!.classList.add("pb-[100px]");
+				navbar!.classList.add("pb-[172px]");
+				mainMain!.classList.add("pt-[246px]");
 				mainMain!.classList.remove("pt-[72px]");
 			}
 		};
