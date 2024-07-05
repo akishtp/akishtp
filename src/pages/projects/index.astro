@@ -1,7 +1,69 @@
 ---
-import Layout from "../../layouts/Layout.astro";
+import Layout from "../../layouts/Layout.astro"
+import "../../styles/projects.css"
 ---
 
-<Layout pageTitle="projects">
-	<div class="h-dvh w-full flex items-center justify-center bg-black text-white">Projects page</div>
+<Layout title="Projects">
+    <nav class="navbar">
+        <div class="name">Projects</div>
+        <div class="nav-items">
+            <a href="/" class="nav-item">Home</a>
+            <a href="../contact" class="nav-item">Contact</a>
+        </div>
+    </nav>
+    <main>
+
+        <div class="latest-blog">
+            <div class="latest-blog-content">Latest Blog: Hello World&nbsp;⊛&nbsp;</div>
+            <div class="latest-blog-content">Latest Blog: Hello World&nbsp;⊛&nbsp;</div>
+            <div class="latest-blog-content">Latest Blog: Hello World&nbsp;⊛&nbsp;</div>
+        </div>
+
+
+        <div class="project-grid">
+            <div class="project-grid-item">
+                <img src="/blog-placeholder-2.jpg" alt="">
+                <div class="project-bottom">
+                    <div class="project-title">Project title</div>
+                    <div>↗</div>
+                </div>
+            </div>
+            <div class="project-grid-item">
+                <img src="/blog-placeholder-2.jpg" alt="">
+                <div class="project-bottom">
+                    <div class="project-title">Project title</div>
+                    <div>↗</div>
+                </div>
+            </div>
+            <div class="project-grid-item">
+                <img src="/blog-placeholder-2.jpg" alt="">
+                <div class="project-bottom">
+                    <div class="project-title">Project title</div>
+                    <div>↗</div>
+                </div>
+            </div>
+            <div class="project-grid-item">
+                <img src="/blog-placeholder-2.jpg" alt="">
+                <div class="project-bottom">
+                    <div class="project-title">Project title</div>
+                    <div>↗</div>
+                </div>
+            </div>
+            <div class="project-grid-item">
+                <img src="/blog-placeholder-2.jpg" alt="">
+                <div class="project-bottom">
+                    <div class="project-title">Project title</div>
+                    <div>↗</div>
+                </div>
+            </div>
+            <div class="project-grid-item">
+                <img src="/blog-placeholder-2.jpg" alt="">
+                <div class="project-bottom">
+                    <div class="project-title">Project title</div>
+                    <div>↗</div>
+                </div>
+            </div>
+        </div>
+
+    </main>
 </Layout>

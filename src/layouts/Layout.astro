@@ -1,6 +1,5 @@
 ---
-import { ViewTransitions } from "astro:transitions";
-const { pageTitle, bg } = Astro.props;
+const { title } = Astro.props;
 import '../styles/global.css';
 ---
 
@@ -10,10 +9,9 @@ import '../styles/global.css';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-		<ViewTransitions />
+		<title>{title}</title>
 	</head>
-	<body style={{ backgroundColor: bg }}>
-		<slot />
+	<body>
+        <slot />
 	</body>
 </html>

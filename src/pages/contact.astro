@@ -1,7 +1,55 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../layouts/Layout.astro"
+
+import "../styles/contact.css"
 ---
 
-<Layout pageTitle="projects">
-	<div class="h-dvh w-full flex items-center justify-center bg-black text-white">Contact page</div>
+<Layout title="Contact">
+    <nav class="navbar">
+        <a href="/">Home</a>
+        <a href="./writings">Writings</a>
+        <a href="./projects">Projects</a>
+    </nav>
+    <main>
+
+        <div class="contact-marquee">
+            <div class="contact-marquee-content">hello</div>
+            <div class="contact-marquee-content">hello</div>
+            <div class="contact-marquee-content">hello</div>
+            <div class="contact-marquee-content">hello</div>
+        </div>
+
+        <div class="contact-main">
+            <div class="model">hello</div>
+            <form class="contact-form">
+                <div class="split-form-row">
+                    <label>
+                        <span>Name: </span>
+                        <input type="text" />
+                    </label>
+                    <label>
+                        <span>Phone: </span>
+                        <input type="text" />
+                    </label>
+                </div>
+                <label>
+                    <span>Email: </span>
+                    <input type="email" />
+                </label>
+                <label class="textarea-label">
+                    <span>Message: </span>
+                    <textarea></textarea>
+                </label>
+                <div class="fake-button">Submit</div>
+            </form>
+        </div>
+
+        <div class="contact-marquee">
+            <div class="contact-marquee-content">hello</div>
+            <div class="contact-marquee-content">hello</div>
+            <div class="contact-marquee-content">hello</div>
+            <div class="contact-marquee-content">hello</div>
+        </div>
+
+    </main>
 </Layout>

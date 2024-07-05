@@ -1,0 +1,87 @@
+main {
+  border-bottom: 0.4vw solid #000;
+}
+
+.navbar {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 12dvh;
+  font-size: 4rem;
+}
+
+.contact-marquee {
+  height: 12dvh;
+  font-size: 6rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.contact-marquee-content {
+  display: flex;
+  flex-shrink: 0;
+  animation: 12s marquee infinite linear;
+}
+
+.contact-main {
+  height: 64dvh;
+  border-top: 0.4vw solid #000;
+  border-bottom: 0.4vw solid #000;
+  display: flex;
+}
+
+.split-form-row {
+  display: flex;
+  justify-content: space-between;
+  label {
+    width: 49%;
+  }
+}
+.contact-form {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+}
+label {
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  height: 48px;
+}
+input,
+textarea {
+  background-color: #000;
+  color: #fff;
+}
+textarea {
+  height: 100%;
+}
+.textarea-label {
+  flex: 1;
+}
+.fake-button {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  height: 56px;
+  font-size: 1.6rem;
+  display: flex;
+  width: calc(100% / 3);
+  padding: 0 24px;
+  margin: 12px 0;
+  align-items: center;
+  justify-content: center;
+}
+.model {
+  background-color: #000;
+  width: 50vw;
+}
+
+.contact-form {
+  width: 50vw;
+}
