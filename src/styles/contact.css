@@ -1,3 +1,6 @@
+body {
+  background-color: #e7f6ff;
+}
 main {
   border-bottom: 0.4vw solid #000;
 }
@@ -9,12 +12,12 @@ main {
   justify-content: space-around;
   align-items: center;
   height: 12dvh;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .contact-marquee {
   height: 12dvh;
-  font-size: 6rem;
+  font-size: 4rem;
   display: flex;
   align-items: center;
   overflow: hidden;

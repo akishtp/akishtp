@@ -1,3 +1,6 @@
+body {
+  background-color: #faf5ff;
+}
 main {
   border-bottom: 0.4vw solid #000;
 }
@@ -10,6 +13,8 @@ main {
   border-top: 0.4vw solid #000;
   border-bottom: 0.4vw solid #000;
   height: 96px;
+  z-index: 10;
+  background-color: #faf5ff;
 }
 .name,
 .nav-item {
@@ -18,7 +23,7 @@ main {
   align-items: center;
   font-weight: 700;
   border-right: 0.4vw solid #000;
-  font-size: 6rem;
+  font-size: 4rem;
 }
 .nav-items {
   display: flex;
@@ -27,15 +32,15 @@ main {
 .nav-item:first-of-type {
   border-left: 0.4vw solid #000;
 }
-.nav-item {
-  border-right: 0.4vw solid #000;
+.hamburgusa {
+  display: none;
 }
 main {
   padding: 96px 0 0 0;
 }
 .latest-blog {
   border-bottom: 0.2vw solid #000;
-  font-size: 6rem;
+  font-size: 4rem;
   display: flex;
   overflow: hidden;
 }
@@ -63,7 +68,39 @@ main {
   justify-content: space-between;
 }
 .project-title {
-  font-size: 6rem;
+  font-size: 4rem;
+}
+
+@media only screen and (max-width: 1280px) {
+  main {
+    border-bottom: 0.4rem solid #000;
+  }
+  .navbar {
+    border-bottom: 0.4rem solid #000;
+  }
+  .nav-item,
+  .name {
+    border-right: 0.4rem solid #000;
+  }
+  .nav-item:first-of-type,
+  .name {
+    border-left: 0.4rem solid #000;
+  }
+  .latest-blog {
+    border-bottom: 0.2rem solid #000;
+  }
+  .project-grid-item {
+    border: 0.2rem solid #000;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-items {
+    display: none;
+  }
+  .hamburgusa {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 640px) {

@@ -1,5 +1,9 @@
 ---
+import { getCollection } from 'astro:content';
 import Layout from "../../layouts/Layout.astro"
+
+const allProjects = await getCollection('projects');
+
 import "../../styles/projects.css"
 ---
 
@@ -9,6 +13,9 @@ import "../../styles/projects.css"
         <div class="nav-items">
             <a href="/" class="nav-item">Home</a>
             <a href="../contact" class="nav-item">Contact</a>
+        </div>
+        <div class="hamburgusa">
+            ---
         </div>
     </nav>
     <main>
@@ -21,48 +28,17 @@ import "../../styles/projects.css"
 
 
         <div class="project-grid">
-            <div class="project-grid-item">
-                <img src="/blog-placeholder-2.jpg" alt="">
-                <div class="project-bottom">
-                    <div class="project-title">Project title</div>
-                    <div>↗</div>
-                </div>
-            </div>
-            <div class="project-grid-item">
-                <img src="/blog-placeholder-2.jpg" alt="">
-                <div class="project-bottom">
-                    <div class="project-title">Project title</div>
-                    <div>↗</div>
-                </div>
-            </div>
-            <div class="project-grid-item">
-                <img src="/blog-placeholder-2.jpg" alt="">
-                <div class="project-bottom">
-                    <div class="project-title">Project title</div>
-                    <div>↗</div>
-                </div>
-            </div>
-            <div class="project-grid-item">
-                <img src="/blog-placeholder-2.jpg" alt="">
-                <div class="project-bottom">
-                    <div class="project-title">Project title</div>
-                    <div>↗</div>
-                </div>
-            </div>
-            <div class="project-grid-item">
-                <img src="/blog-placeholder-2.jpg" alt="">
-                <div class="project-bottom">
-                    <div class="project-title">Project title</div>
-                    <div>↗</div>
-                </div>
-            </div>
-            <div class="project-grid-item">
-                <img src="/blog-placeholder-2.jpg" alt="">
-                <div class="project-bottom">
-                    <div class="project-title">Project title</div>
-                    <div>↗</div>
-                </div>
-            </div>
+            {allProjects.map(project=>{
+                return (
+                    <a href={`./projects/${project.slug}`} class="project-grid-item">
+                        <img src={project.data.image.src} alt={project.data.image.alt}>
+                        <div class="project-bottom">
+                            <div class="project-title">{project.data.title}</div>
+                            <div>↗</div>
+                        </div>
+                    </a>
+                );
+            })}
         </div>
 
     </main>
