@@ -43,6 +43,22 @@ body {
 .projects-nav:hover {
   color: #fff;
 }
+.contact-nav:hover,
+.projects-nav:hover,
+.writings-nav:hover {
+  justify-content: center;
+}
+.nav-marquee-content {
+  display: none;
+}
+.nav-marquee-content:first-of-type {
+  display: block;
+}
+.nav:hover .nav-marquee-content {
+  padding: 0 12px;
+  animation: 12s marquee infinite linear;
+  display: block;
+}
 
 .contact-nav {
   background-color: #70a0ff;

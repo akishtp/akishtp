@@ -27,16 +27,16 @@ import "../../styles/projects.css"
     <main>
 
         <a href="./writings" class="latest-blog">
-            <div class="latest-blog-content">Latest Blog: Hello World&nbsp;⊛&nbsp;</div>
-            <div class="latest-blog-content">Latest Blog: Hello World&nbsp;⊛&nbsp;</div>
-            <div class="latest-blog-content">Latest Blog: Hello World&nbsp;⊛&nbsp;</div>
+            <div class="latest-blog-content">Latest writing: Hello World&nbsp;⊛&nbsp;</div>
+            <div class="latest-blog-content">Latest writing: Hello World&nbsp;⊛&nbsp;</div>
+            <div class="latest-blog-content">Latest writing: Hello World&nbsp;⊛&nbsp;</div>
         </a>
 
 
         <div class="project-grid">
             {allProjects.map(project=>{
                 return (
-                    <a href={`./projects/${project.slug}`} class="project-grid-item">
+                    <a href={`/${project.slug}`} class="project-grid-item">
                         <img src={project.data.image.src} alt={project.data.image.alt} />
                         <div class="project-bottom">
                             <div class="project-title">{project.data.title}</div>
