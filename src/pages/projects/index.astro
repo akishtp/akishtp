@@ -11,8 +11,14 @@ import "../../styles/projects.css"
     <nav class="navbar">
         <div class="name">Projects</div>
         <div class="nav-items">
-            <a href="/" class="nav-item">Home</a>
-            <a href="../contact" class="nav-item">Contact</a>
+            <a href="/" class="nav-item">
+                Home
+                <div class="nav-item-backround"></div>
+            </a>
+            <a href="../contact" class="nav-item">
+                Contact
+                <div class="nav-item-backround"></div>
+            </a>
         </div>
         <div class="hamburgusa">
             ---
@@ -20,18 +26,18 @@ import "../../styles/projects.css"
     </nav>
     <main>
 
-        <div class="latest-blog">
+        <a href="./writings" class="latest-blog">
             <div class="latest-blog-content">Latest Blog: Hello World&nbsp;⊛&nbsp;</div>
             <div class="latest-blog-content">Latest Blog: Hello World&nbsp;⊛&nbsp;</div>
             <div class="latest-blog-content">Latest Blog: Hello World&nbsp;⊛&nbsp;</div>
-        </div>
+        </a>
 
 
         <div class="project-grid">
             {allProjects.map(project=>{
                 return (
                     <a href={`./projects/${project.slug}`} class="project-grid-item">
-                        <img src={project.data.image.src} alt={project.data.image.alt}>
+                        <img src={project.data.image.src} alt={project.data.image.alt} />
                         <div class="project-bottom">
                             <div class="project-title">{project.data.title}</div>
                             <div>↗</div>
