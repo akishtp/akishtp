@@ -17,15 +17,25 @@ main {
 
 .contact-marquee {
   height: 12dvh;
-  font-size: 4rem;
   display: flex;
   align-items: center;
   overflow: hidden;
 }
 .contact-marquee-content {
   display: flex;
+  align-items: center;
   flex-shrink: 0;
-  animation: 12s marquee infinite linear;
+  justify-content: space-between;
+  animation: 24s marquee infinite linear;
+}
+.contact-marquee-content div {
+  font-size: 2vw;
+  margin: 12vw;
+}
+.contact-marquee-content img {
+  height: 6dvh;
+  width: 6dvh;
+  margin: 12vw;
 }
 
 .contact-main {

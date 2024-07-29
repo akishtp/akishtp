@@ -11,9 +11,9 @@ import "../../styles/writings.css"
     <nav>
         <div>Writings</div>
         <div>
-            <a href="../">Home</a>
-            <a href="./projects">Projects</a>
-            <a href="./contact">Contact</a>
+            <a href="../" class="nav-item">Home</a>
+            <a href="./projects" class="nav-item">Projects</a>
+            <a href="./contact" class="nav-item">Contact</a>
         </div>
     </nav>
     <main>
@@ -21,7 +21,7 @@ import "../../styles/writings.css"
        <div class="writings-container">
         {allWritings.toReversed().map((writing, index)=> {
             return(
-                <a href={`/${writing.slug}`} class="writing-container">
+                <a href={`/writings/${writing.slug}`} class="writing-container">
                     <div class="index">{index+1}.</div>
                     <div>
                         <div class="writing-title">{writing.data.title}</div>

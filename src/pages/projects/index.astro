@@ -36,7 +36,7 @@ import "../../styles/projects.css"
         <div class="project-grid">
             {allProjects.map(project=>{
                 return (
-                    <a href={`/${project.slug}`} class="project-grid-item">
+                    <a href={`/projects/${project.slug}`} class="project-grid-item">
                         <img src={project.data.image.src} alt={project.data.image.alt} />
                         <div class="project-bottom">
                             <div class="project-title">{project.data.title}</div>
