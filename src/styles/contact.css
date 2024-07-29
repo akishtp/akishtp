@@ -26,7 +26,12 @@ main {
   align-items: center;
   flex-shrink: 0;
   justify-content: space-between;
-  animation: 24s marquee infinite linear;
+}
+.icon-marquee {
+  animation: 36s marquee infinite linear;
+}
+.text-marquee {
+  animation: 48s marquee infinite linear;
 }
 .contact-marquee-content div {
   font-size: 2vw;
@@ -97,4 +102,61 @@ textarea {
 
 .contact-form {
   width: 50vw;
+}
+.navbar button {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+.menu-icon {
+  height: 2rem;
+  width: 2rem;
+}
+.hidden-menu {
+  height: 0;
+  top: 12dvh;
+  left: 0;
+  position: absolute;
+  width: 100vw;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #000;
+  transition: height 0.1s ease-out;
+}
+.hidden-menu-item {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .model {
+    display: none;
+  }
+  .contact-form {
+    width: 100vw;
+  }
+  .contact-marquee-content div {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 12px;
+    justify-content: space-between;
+  }
+  .hiding-menu {
+    display: none;
+  }
+  .navbar button {
+    display: block;
+  }
+  .hidden-menu.open {
+    height: calc(100dvh - 12dvh);
+  }
+  .hidden-menu.open .hidden-menu-item {
+    display: block;
+  }
 }

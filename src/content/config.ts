@@ -8,6 +8,7 @@ const projectCollection = defineCollection({
       src: z.string(),
       alt: z.string(),
     }),
+    date: z.date(),
   }),
 });
 
