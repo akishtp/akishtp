@@ -34,7 +34,7 @@ main {
   animation: 48s marquee infinite linear;
 }
 .contact-marquee-content div {
-  font-size: 2vw;
+  font-size: 2rem;
   margin: 12vw;
 }
 .contact-marquee-content img {
@@ -137,17 +137,24 @@ textarea {
   .contact-form {
     width: 100vw;
   }
-  .contact-marquee-content div {
-    font-size: 2rem;
+  .contact-marquee {
+    height: 10dvh;
+  }
+  .contact-main {
+    height: 68dvh;
+  }
+  .contact-marquee-content img {
+    height: 5dvh;
+    width: 5dvh;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .navbar {
     padding: 0 12px;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
-  .hiding-menu {
+  .menu-item {
     display: none;
   }
   .navbar button {
@@ -158,5 +165,23 @@ textarea {
   }
   .hidden-menu.open .hidden-menu-item {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .contact-form {
+    padding: 1rem;
+  }
+  .split-form-row {
+    flex-direction: column;
+    label {
+      width: 100%;
+    }
+  }
+  label {
+    margin: 4px 0;
+  }
+  .fake-button {
+    width: 50%;
   }
 }
